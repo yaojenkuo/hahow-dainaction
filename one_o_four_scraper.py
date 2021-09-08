@@ -71,6 +71,7 @@ class OneOFourJobDescScraper:
             job_desc = response_json['data']['jobDetail']['jobDescription']
             job_desc = re.sub("\n|\r", "", job_desc)
             job_data = {
+                'jdSource': '104人力銀行',
                 'company': company,
                 'jobTitle': job_title,
                 'jobDesc': job_desc

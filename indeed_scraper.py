@@ -52,4 +52,5 @@ class IndeedJobDescScraper:
         out["company"] = companies
         out["jobTitle"] = job_titles
         out["jobDesc"] = job_descriptions
+        out.insert(0, "jdSource", "Indeed")
         return out

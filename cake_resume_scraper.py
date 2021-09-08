@@ -51,4 +51,5 @@ class CakeResumeJobDescScraper:
         out["company"] = companies
         out["jobTitle"] = job_titles
         out["jobDesc"] = job_descriptions
+        out.insert(0, "jdSource", "CakeResume")
         return out
