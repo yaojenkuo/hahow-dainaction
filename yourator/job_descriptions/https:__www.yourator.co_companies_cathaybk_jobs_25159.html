@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html class="v2-5">
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-4a369e085128b3d30d5","applicationID":"1300925337","transactionName":"clhdFUtcVQ1UFB4IXVNEHBJRXE4=","queueTime":0,"applicationTime":172,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-4a369e085128b3d30d5",applicationID:"1300925337"};;/*! For license information please see nr-loader-rum-1.246.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={234:(e,t,n)=>{n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>S,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a),(0,r.Qy)(e,o[e],"info")}const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=n(7056),l=n(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f()),(0,r.Qy)(e,g[e],"config")}function m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b),(0,r.Qy)(e,y[e],"loader_config")}const _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,k),(0,r.Qy)(e,E[e],"runtime")}function S(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{Array.isArray(e[o])&&Array.isArray(t[o])?n[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.246.1",i="PROD",a="CDN"},385:(e,t,n)=>{n.d(t,{Nk:()=>u,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>d});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,d=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),u=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(d.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(8325),i=n(5546),a=n(3325);const o={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},s=new Set;function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,r]=e;o[t]?o[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r)})),Object.keys(o).forEach((e=>{void 0===d[e]&&(o[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),s.add(t))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>o,b:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...a,[e]:{...s,[n]:t}},i}function d(e,t){o()[e]=t}function u(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>i});var r=n(8325);class i{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{n.d(t,{j:()=>b});var r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2587);const v=e=>{const t=e.startsWith("http");e+="/",n.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,_||{}),A.jsAttributes??={},u.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const E=(0,i.P_)(e),j=[A.beacon,A.errorBeacon];m||(m=!0,E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e,x),p();const T=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>_()),!0):_(),g}(e,y);return(0,g.Qy)(e,T,"api"),(0,g.Qy)(e,D,"exposed"),(0,g.EZ)("activatedFeatures",h.T),T}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.246.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.246.1.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,d=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<o.length;d++)a=o[d],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.246.1.PROD"]=self["webpackChunk:NRBA-1.246.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The page action feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The js errors feature is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),d=i(5938),u=i(3960),l=i(385);class f extends d.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,u.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),T=i(7894),S=i(9251);class N extends f{static featureName=S.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,S.t,n),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,T.z)()],void 0,S.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,T.z)()],void 0,S.t,this.ee))),this.importAggregator())}}var C=i(3081);class P extends f{static featureName=C.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){const t="features";try{const r=o(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,N,P],loaderType:"lite"})})()})();</script>
+<title>【數位金融】數位分析 Data Analyst(數數發中心, DDT) - 國泰世華商業銀行｜Yourator 求職平台</title>
+
+<meta name="google-site-verification" content="sowWloLaH8OmQmZvOgQecI3zqPlgKr3BLTfZFn3GKZo">
+<meta property="fb:pages" content="1655017781444471">
+<meta http-equiv="content-language" content="zh-tw">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="職缺, 海外工作, 新創, 徵才, 找工作, 求職, 招募, 數位轉型, 軟體, 科技, 網路, 外商">
+<meta name="author" content="Yourator">
+<meta name="robots" content="all">
+<meta name="copyright" content="Copyright 2021 Yourator. All Rights Reserved.">
+
+<meta property="fb:app_id" content="1511524352496185" />
+<meta content="【數位金融】數位分析 Data Analyst(數數發中心, DDT) - 國泰世華商業銀行｜Yourator 求職平台" property="og:title" />
+<meta content="Yourator 新創・數位人才求職平台" property="og:site_name" />
+<link rel="canonical" href="https://www.yourator.co/companies/cathaybk/jobs/25159" />
+<meta content="https://www.yourator.co/companies/cathaybk/jobs/25159" property="og:url" />
+<meta content="【職務說明 What will you do】 1. 透過數據驅動建立重點業務指標，運用工具視覺化動態呈現觀測指標，供團隊靈活運用 2. 根據網路銀行Web,App用戶行為等數據進行商業分析，找出數位金融商業模式及增長機會點，達成商業決策或提升業務執行效率 3. 有架構的以數據協助團隊拆解問題..." name="description" />
+<meta content="【職務說明 What will you do】 1. 透過數據驅動建立重點業務指標，運用工具視覺化動態呈現觀測指標，供團隊靈活運用 2. 根據網路銀行Web,App用戶行為等數據進行商業分析，找出數位金融商業模式及增長機會點，達成商業決策或提升業務執行效率 3. 有架構的以數據協助團隊拆解問題..." property="og:description" />
+<meta content="https://s3cdn.yourator.co/banners/banners/000/001/847/home/452994088b45f483ae6a71151a13eb0c9bcabf5d.png" property="og:image" />
+<meta content="article" property="og:type" />
+<script src="https://www.yourator.co/assets/sweetalert-fda8cdbba1227cff5138bb3097a9f122de8b7a275cc0bc70fd381091761c4d65.js" defer="defer"></script>
+<script src="https://www.yourator.co/assets/slick-039980a5f5efac5db4486ae56f1dff11e8586f4dd2aea593ab97929646798f26.js" defer="defer"></script>
+<script src="https://www.yourator.co/assets/lightbox-cac1d9fea4629974d83f8c7d38b9b3d2230589e8dc7ca89f0fa5c03fb86eecc1.js" defer="defer"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "JobPosting",
+  "title": "【數位金融】數位分析 Data Analyst(數數發中心, DDT)",
+  "description": "\u003cp\u003e【職務說明 What will you do】\u003cbr /\u003e\u003cbr\u003e1. 透過數據驅動建立重點業務指標，運用工具視覺化動態呈現觀測指標，供團隊靈活運用\u003cbr /\u003e\u003cbr\u003e2. 根據網路銀行Web,App用戶行為等數據進行商業分析，找出數位金融商業模式及增長機會點，達成商業決策或提升業務執行效率\u003cbr /\u003e\u003cbr\u003e3. 有架構的以數據協助團隊拆解問題，並提出洞察、建議改善與發展方向\u003cbr /\u003e\u003cbr\u003e4. 追蹤與分析各產品行銷活動之分群回應率與經營成效\u003c/p\u003e\u003cbr\u003e\u003cbr\u003e\u003cbr\u003e公司地址：臺北市信義區松仁路7號1樓",
+  "identifier": {
+      "@type": "PropertyValue",
+      "name": "國泰世華商業銀行股份有限公司",
+      "value": 25159
+  },
+  "datePosted": "2023-10-30 03:00:26 +0800",
+  "validThrough": "2112-09-03",
+  "employmentType": "FULL_TIME",
+  "hiringOrganization": {
+      "@type": "Organization",
+      "name": "國泰世華商業銀行",
+      "sameAs": "https://www.cathaybk.com.tw/cathaybk/",
+      "logo": "https://s3cdn.yourator.co/companies/logos/000/001/706/thumb/18fd3a21108b6cffc74f0b0e47596ab5b9221ac2.jpg"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+        "@type": "PostalAddress",
+        "name": "臺北市信義區松仁路7號1樓",
+        "addressLocality": "臺北市",
+        "addressRegion": "臺北市",
+        "addressCountry": "台灣"
+    }
+  }
+}
+</script>
+
+<link rel="shortcut icon" type="image/png" href="https://www.yourator.co/assets/favicon-d81fbafccb6466e5a9dc171995d32aaa8eca110fbfce54cf4a190a5ebc5c685d.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" href="https://www.yourator.co/assets/apple-touch-icon-120x120-precomposed-f618ce04e518668244e6509e5d2b6bf7461590c7cd65ff6b22abdded74ad09b6.png" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="2sZfsXfMq-XWL5uh9idL5wrUWZovi--lxNvXtTYP8GQE6QF7MUqzZCDKM895D7t6WYjFrNYApTDI_WhKXb8vsg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" media="all" href="https://www.yourator.co/assets/application-cbaedb4c43a7f4fbf0e4ae233dc32906a77134a7c9dae32678c6b94b340b6db3.css" data-turbolinks-track="reload" />
+<script src="https://www.yourator.co/assets/application-c14375c7cafe559a6bb2c7765a0aa340ca1655663dc8e7534dd5bf0d985c71a1.js" crossorigin="anonymous" data-turbolinks-track="reload"></script>
+<link rel="stylesheet" href="https://www.yourator.co/packs/css/tailwind-ed34cac0.css" data-turbolinks-track="reload" />
+
+
+<script type="text/javascript">
+    $(document).on('turbolinks:load', function(){
+      var url = window.location.href;
+
+      dataLayer.push({
+        'event': 'pageView',
+        'virtualUrl': url
+      });
+    });
+  </script>
+
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2QJ8B"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N2QJ8B');</script>
+<style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+
+<script>
+  // Avoid rails vue component register component duplicated.
+  (function() {
+    const fn = window.Vue.component;
+
+    window.Vue.component = function(componentName) {
+      if(!window.Vue.options.components[componentName]) {
+        fn.apply(window.Vue, arguments);
+      }
+    }
+
+    Vue.use({
+      install: () => {
+        const helpers = {
+          methods: {
+
+            tracking: (name, payload, version) => {
+              if(!name) {
+                return;
+              }
+              let url = ''
+              if (version === 'v3') {
+                url += `/api/v3/ec3?name=${name}`
+              } else {
+                url += `/api/v3/ec?name=${name}`
+              }
+
+              if(payload) {
+                url += `&payload=${encodeURIComponent(JSON.stringify(payload))}`
+              }
+
+              $.ajax({
+                type: 'GET',
+                url : url,
+                beforeSend: function(xhr){
+                  xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
+                }
+              }).done(function(data){
+                // console.log('success')
+              }).fail(function(){
+                // console.log('failed')
+              });
+            }
+          }
+        }
+
+        Vue.prototype.helpers = helpers
+        Vue.helpers = helpers
+      }
+    })
+
+    Vue.use({
+      install: (Vue, options) => {
+        const defaultEvent = function () {
+          if (typeof Turbo !== 'undefined') {
+            return 'turbo:visit';
+          }
+
+          return 'turbolinks:visit';
+        }
+
+        const handleVueDestruction = function (vue) {
+          const event = vue.$options.destroyEvent || defaultEvent();
+
+          document.addEventListener(event, function teardown() {
+            vue.$destroy();
+            document.removeEventListener(event, teardown);
+          });
+        }
+
+        Vue.mixin({
+          beforeMount: function() {
+            if (this === this.$root && this.$el) {
+              handleVueDestruction(this);
+
+              // cache original element
+              this.$cachedHTML = this.$el.outerHTML;
+
+              // register root hook to restore original element on destroy
+              this.$once('hook:destroyed', function() {
+                if( this.$el.parentNode )
+                  this.$el.outerHTML = this.$cachedHTML
+              });
+            }
+          }
+        })
+      }
+    })
+    Vue.use(VueLazyload)
+    Vue.use(VueObserveVisibility)
+  }());
+</script>
+<script>
+    window.ymodals = {commands: []}
+    window.yFlashMessages = {commands: []}
+
+    window.onload = () => {
+      window.appReady = true
+    }
+
+  </script>
+<script src="https://www.yourator.co/packs/runtime.a4254a12ef8f80648214.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/5362.c3208dbc0a233bce4a9c.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/458.cfe7523c550c3eafd90d.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/3003.8204d2f78c7be9cd7b75.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/4475.eb9e6f4fef0e9ebdd097.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/9081.715834dc729f27a524c3.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/1025.fab118cbb9e364a25c17.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/9198.df9331f0a2522e8dead9.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/9888.48c6a491df85e34e08cf.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/827.9664992adeaa151a92b9.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/489.912a481e0cc0a01a1afa.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/4396.c0ad37f27dc1d4d6786a.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/2104.6821d21afd8b8900a5ba.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/8865.107380b572a2f110994b.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/9957.5b99eddca8e8118ebbb6.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/5950.5d480a47ab2539a602fe.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/3202.9f89f7faa577dad76ce5.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/2447.a0440fe99b3e6a94066f.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/1766.69fd8f91f9e593e037a2.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/5647.a5c3648f488c1055f135.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/1535.9e5371d4b80f39fe0243.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/740.04fff999bed223b53165.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/9031.45ad420c7700435100e3.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/frontStageApp.533c2f8cd6b048357268.js" data-turbolinks-track="reload" defer="defer"></script>
+<script src="https://www.yourator.co/packs/tailwind.4c42da32fb203e7fb0fc.js" data-turbolinks-track="reload" defer="defer"></script>
+</head>
+<body>
+
+<div id="modals"></div>
+<div id="flash-messages"></div>
+
+<template id="y-search-bar-template">
+<div class="search-bar-container">
+<h1 class="search-bar-title">關鍵字搜尋</h1>
+<div :class="[{
+        'y-search-bar': true,
+        'icon-right': iconRight,
+      }, className]">
+<input ref="search-input" type="search" v-model="term" :placeholder="placeholder" @blur="hideCompleteMenu" @keydown.enter="submitTerm(term)" @keyup.up="moveItem('previous')" @keyup.down="moveItem('next')" @focus="showSavedItems" @input="getCompleteItems" />
+<span v-if="clearAndSearch && term !== ''" class="search-bar-action clear-button" @click="cleanTerm(); cleanAutocompleteItems();">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none">
+<path d="M9.18981 7.99909L11.8828 5.30609C12.0386 5.15034 12.0386 4.89759 11.8828 4.74159L11.2571 4.11584C11.1013 3.96009 10.8486 3.96009 10.6926 4.11584L7.99981 6.80909L5.30681 4.11609C5.15106 3.96034 4.89831 3.96034 4.74231 4.11609L4.11681 4.74159C3.96106 4.89734 3.96106 5.15009 4.11681 5.30609L6.80981 7.99909L4.11681 10.6921C3.96106 10.8478 3.96106 11.1006 4.11681 11.2566L4.74256 11.8823C4.89831 12.0381 5.15106 12.0381 5.30706 11.8823L7.99981 9.18909L10.6928 11.8821C10.8486 12.0378 11.1013 12.0378 11.2573 11.8821L11.8831 11.2563C12.0388 11.1006 12.0388 10.8478 11.8831 10.6918L9.18981 7.99909Z" fill="#979797"></path>
+</svg>
+</span>
+<span class="search-bar-action">
+<span class="search-bar-action__icon search-bar-action__icon--border" @click="submitTerm(term)">
+<i class="far fa-search" aria-hidden="true"></i>
+</span>
+</span>
+<div v-if="showCompleteMenu && ((term !== '' && autocompleteItems.length > 0) || (previousTerm === '' && savedItems.length > 0))" class="autocomplete-menu">
+<div v-if="autocompleteItems.length > 0">
+<div v-for="(item, index) in autocompleteItems" :key="item[itemValue]" :class="{
+              'autocomplete-menu__item': true,
+              'selected': currentItem - 1 === index
+            }" @mousedown.prevent="submitTerm(item[itemValue])">
+<div v-html="getFormattedItem(item[itemText])"></div>
+</div>
+</div>
+<div v-else-if="previousTerm === '' && savedItems.length > 0">
+<div class="autocomplete-menu__description">{{savedItemsDescription}}</div>
+<div v-for="(item, index) in savedItems" :key="item[itemValue]" :class="{
+              'autocomplete-menu__item': true,
+              'selected': currentItem - 1 === index
+            }" @mousedown.prevent="submitTerm(item[itemValue])">
+<div v-html="getFormattedItem(item[itemText])"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</template>
+<script>
+if (window.Vue) {
+  Vue.component('y-search-bar', {
+    template: '#y-search-bar-template',
+    mixins: [Vue.helpers],
+    model: {
+      prop: 'term',
+      event: 'input'
+    },
+    props: {
+      className: {
+        type: String,
+        required: false,
+        default () {
+          return ''
+        }
+      },
+      iconRight: {
+        type: Boolean,
+        required: false,
+        default () {
+          return false
+        }
+      },
+      placeholderColor: {
+        type: String,
+        required: false,
+        default () {
+          return '#9B9B9B'
+        }
+      },
+      placeholder: {
+        type: String,
+        required: false,
+        default () {
+          return '輸入關鍵字...'
+        }
+      },
+      autocomplete: {
+        type: Boolean,
+        required: false,
+        default () {
+          return false
+        }
+      },
+      autocompleteItems: {
+        type: Array,
+        required: false,
+        default () {
+          return []
+        }
+      },
+      itemText: {
+        type: String,
+        required: false,
+        default () {
+          return 'name'
+        }
+      },
+      itemValue: {
+        type: String,
+        required: false,
+        default () {
+          return 'name'
+        }
+      },
+      term: {
+        type: String,
+        required: false,
+        default () {
+          return ''
+        }
+      },
+      savedItemsDescription: {
+        type: String,
+        required: false,
+        default () {
+          return '近期搜尋紀錄'
+        }
+      },
+      savedItems: {
+        type: Array,
+        required: false,
+        default () {
+          return []
+        }
+      },
+      type: {
+        type: String,
+        required: false,
+        default() {
+          return 'global'
+        }
+      },
+      clearAndSearch: {
+        type: Boolean,
+        default: false
+      }
+    },
+
+    data: function() {
+      return {
+        previousTerm: '',
+        idCount: 1,
+        showCompleteMenu: false,
+        currentItem: 0,
+        cacheTerm: ''
+      }
+    },
+    methods: {
+      submitTerm (term) {
+        if (term.trim() === '' || event.isComposing) return false
+
+        this.$emit('submit', {
+          type: 'term',
+          id: this.idCount,
+          name: term
+        }, 'add')
+
+        this.idCount++
+        this.cleanTerm()
+        this.cleanAutocompleteItems()
+        this.hideCompleteMenu()
+        this.$refs['search-input'].blur()
+        this.tracking('search_site:search_term_submit', {term: term, type: this.type})
+      },
+      cleanTerm () {
+        this.$emit('clear')
+        this.term = ''
+      },
+      cleanAutocompleteItems () {
+        this.autocompleteItems = []
+      },
+      hideCompleteMenu () {
+        this.showCompleteMenu = false
+      },
+      showSavedItems () {
+        this.showCompleteMenuHandler()
+      },
+      getCompleteItems () {
+        this.$emit('input', this.term)
+        if (!this.autocomplete) return false
+
+        if (this.term !== this.previousTerm) {
+          this.previousTerm = this.term
+        }
+
+        this.showCompleteMenuHandler()
+      },
+      showCompleteMenuHandler () {
+        this.currentItem = 0
+        this.showCompleteMenu = true
+      },
+      getFormattedItem (item) {
+        let escapeTerm = this.escapeHtml(this.term)
+        let escapeItem = this.escapeHtml(item)
+        let charIndex = escapeItem.toLowerCase().indexOf(escapeTerm.toLowerCase())
+
+        return (charIndex > -1 && escapeTerm.trim() !== '')
+          ? (
+            escapeItem.substring(0, charIndex) +
+            `<span class="active">${escapeItem.substring(charIndex, charIndex + escapeTerm.length)}</span>` +
+            escapeItem.substring(charIndex + escapeTerm.length)
+          )
+          : escapeItem
+      },
+      escapeHtml(unsafe) {
+        return unsafe
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;")
+      },
+      getCompleteMenuItems() {
+        if (this.term !== '' && this.autocompleteItems.length > 0) {
+          return this.autocompleteItems
+        }
+        if (this.previousTerm === '' && this.savedItems.length > 0) {
+          return this.savedItems
+        }
+        return []
+      },
+      moveItem (status) {
+        // itemsCount plus 1 because of cacheTerm
+        // cacheTerm is user's input
+        const menuItems = this.getCompleteMenuItems()
+        const itemsCount = menuItems.length + 1
+        if (this.currentItem === 0) this.cacheTerm = this.term
+
+        this.currentItem = status === 'previous'
+          ? (this.currentItem + itemsCount - 1) % itemsCount
+          : (this.currentItem + 1) % itemsCount
+
+        this.term = this.currentItem === 0
+          ? this.cacheTerm
+          : menuItems[this.currentItem - 1][this.itemValue]
+      },
+      focus () {
+        this.$refs['search-input'].focus()
+      }
+    }
+  });
+}
+</script>
+<div class="v2-5">
+<div data-turbolinks="false" class="no-print" id="Navbar-react-component-8ab88a83-2887-4aa1-9641-d9fb07139738"></div>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="Navbar" data-dom-id="Navbar-react-component-8ab88a83-2887-4aa1-9641-d9fb07139738">{"isLogin":false,"isEnterprise":false,"isXmasSeason":false,"user":{"avatar":null,"managingPath":"","companyPageUrl":"","role":"normal"},"text":{"signUp":"註冊","logIn":"登入","publishJob":"刊登職缺","hrDashboard":"HR 管理","dashboard":"後台","companyInfoPage":"企業形象頁面","dashboardTutorial":"後台使用教學","searchbarPlaceholder":"搜尋全站"},"NAVBAR_DATA_LIST":[{"buttonProps":{"text":"找工作","url":"/jobs"},"panelList":[{"type":"list","title":"找工作","options":[{"text":"搜尋職缺","url":"/jobs"},{"text":"新創實習","url":"/jobs?position%5B%5D=intern"},{"text":"日系工作","url":"/events/JapanTalent"},{"text":"DEI 求職","url":"/events/DEI"},{"text":"歡迎新鮮人","url":"/events/fresh-graduate-jobs"}]},{"type":"list","title":"多元職缺","options":[{"text":"中高階職缺","url":"https://jobmenta.yourator.co/"},{"text":"AppWorks 職缺","url":"https://appworks.yourator.co/"},{"text":"餐飲業職缺","url":"https://ichef.yourator.co/"},{"text":"法律職缺","url":"https://jobboard.lawsnote.com/"}]},{"type":"image","url":"/careerfair","title":"2024 數位職涯博覽會","description":"立即免費報名"}]},{"buttonProps":{"text":"找公司","url":"/companies"},"panelList":[{"type":"list","title":"找公司","options":[{"text":"搜尋企業","url":"/companies"},{"text":"新創團隊","url":"/companies?tag[]=%E6%96%B0%E5%89%B5"},{"text":"AI 團隊","url":"/companies?tag[]=AI"},{"text":"Yourator 企業專訪","url":"/articles?category%5B%5D=%E4%BA%BA%E7%89%A9%20%2F%20%E4%BC%81%E6%A5%AD%E5%B0%88%E8%A8%AA"},{"text":"企業網誌","url":"/company_blogs"}]},{"type":"image","url":"/companies","title":"搜尋全站企業","description":"懂人才的團隊都在這","showShadow":true}]},{"buttonProps":{"text":"履歷工具","url":"/resumes"},"panelList":[{"type":"list","title":"履歷工具","options":[{"text":"匯入既有履歷","url":"/resumes?action=import"},{"text":"AI 履歷小助理","url":"/resumes?action=generate"},{"text":"手動撰寫履歷","url":"/resumes?action=create"},{"text":"我的履歷列表","url":"/resumes"},{"text":"精選履歷範本","url":"/resume_examples/"},{"text":"履歷撰寫攻略","url":"/articles?tag[]=%E5%B1%A5%E6%AD%B7"}]},{"type":"image","url":"/resumes","title":"立即開始製作履歷","description":"已有履歷嗎？馬上匯入秒投遞"}]},{"buttonProps":{"text":"專欄","url":"/articles"},"panelList":[{"type":"list","title":"專欄","options":[{"text":"所有文章","url":"/articles"},{"text":"履歷 / 求職信","url":"/articles?category%5B%5D=%E5%B1%A5%E6%AD%B7%20%2F%20%E6%B1%82%E8%81%B7%E4%BF%A1%E6%92%B0%E5%AF%AB"},{"text":"面試","url":"/articles?category%5B%5D=%E9%9D%A2%E8%A9%A6%E6%8A%80%E5%B7%A7"},{"text":"求職攻略","url":"/articles?category%5B%5D=%E7%B6%9C%E5%90%88%E6%B1%82%E8%81%B7%E6%94%BB%E7%95%A5"},{"text":"職涯探索","url":"/articles?category%5B%5D=%E8%81%B7%E6%B6%AF%E8%A7%80%E9%BB%9E"},{"text":"人物專訪","url":"/articles?category%5B%5D=%E4%BA%BA%E7%89%A9%20%2F%20%E4%BC%81%E6%A5%AD%E5%B0%88%E8%A8%AA"},{"text":"日本求職攻略","url":"/articles?category%5B%5D=%E6%97%A5%E6%9C%AC%E6%B1%82%E8%81%B7%E6%94%BB%E7%95%A5"}]},{"type":"image","url":"https://linktr.ee/creatingourfuture","title":"職涯履行家 Podcast","description":"一起探索新的職涯機會，找到你的理想工作！","showShadow":true}]},{"buttonProps":{"text":"企業招募","url":"https://www.plans.yourator.co/"},"panelList":[{"type":"list","title":"企業招募","options":[{"text":"職缺刊登","url":"https://www.plans.yourator.co/"},{"text":"中高階獵才","url":"https://www.plans.yourator.co/jobmenta"},{"text":"招募管理工具","url":"https://www.teamdoor.io/"},{"text":"雇主品牌招募","url":"https://www.plans.yourator.co/branding"},{"text":"就業博覽會","url":"/articles/370"}]},{"type":"list","title":"招募白皮書","options":[{"text":"招募攻略","url":"/articles?category%5B%5D=%E4%BA%BA%E8%B3%87%E6%8B%9B%E5%8B%9F%E7%AD%96%E7%95%A5"},{"text":"人資工作趨勢","url":"/articles?category%5B%5D=%E4%BA%BA%E8%B3%87%E8%B6%A8%E5%8B%A2"}]},{"type":"image","url":"https://www.plans.yourator.co/jobmenta","title":"預約中高階獵才諮詢","description":"找到優質數位轉型人才","showShadow":true}]},{"buttonProps":{"text":"社群","url":"https://www.facebook.com/yourator.co/"},"panelList":[{"type":"list","title":"關注我們","options":[{"text":"Facebook","url":"https://www.facebook.com/yourator.co/"},{"text":"Instagram","url":"https://www.instagram.com/yourator.co/"},{"text":"LINE OA","url":"https://lihi1.com/9VGCG/"},{"text":"Podcast","url":"https://linktr.ee/creatingourfuture"},{"text":"LinkedIn","url":"https://www.linkedin.com/company/13648933"},{"text":"線上 / 線下活動","url":"https://www.accupass.com/organizer/detail/1707121243422088571559"}]},{"type":"image","url":"https://www.instagram.com/yourator.co/","title":"Yourator 數位工作者充電站","description":"獨門求職祕技都在這","showShadow":true}]},{"buttonProps":{"text":"🔥 2024 職涯博覽會","url":"/careerfair"},"panelList":[]}],"hasUnreadNotification":false}</script>
+<div class="main-navbar main-navbar--desktop no-print" data-turbolinks="false">
+</div>
+<div class="main-navbar main-navbar--mobile no-print" data-turbolinks="false">
+<div id="mobile-navbar" class="navigation">
+<span class="hamburger-menu"><span></span></span>
+<div class="nav-items">
+<a class="nav-item " href="/companies">公司</a>
+<a class="nav-item" href="/jobs">職缺</a>
+<a class="nav-item intern-jobs" href="/jobs?position%5B%5D=intern">新創實習</a>
+<a class="nav-item " href="/articles">專欄</a>
+<a class="nav-item " href="/company_blogs">企業網誌</a>
+<a class="nav-item" target="_blank" rel="noopener" href="https://jobmenta.yourator.co/">中高階獵才</a>
+<a class="nav-item" href="/careerfair">🔥 2024 職涯博覽會</a>
+<a class="nav-item nav-item--highlight" data-turbolinks="false" href="https://yourator.pse.is/SNS38">刊登職缺</a>
+</div>
+<div class="navbar-logo">
+<a href="/"><img src="https://www.yourator.co/assets/yourator-logo-a9f5641040cda277f18e27e607c3d3ff458eb389b6350f3bae435b69fa9e3a67.png" /></a>
+</div>
+<div class="flex nav-search flex-align-center" @click="toggleSearchBox">
+<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 20 20" fill="#333333">
+<path d="M17.8906 16.6531L14.0969 12.8594C14.025 12.7875 13.9313 12.75 13.8313 12.75H13.4187C14.4031 11.6094 15 10.125 15 8.5C15 4.90937 12.0906 2 8.5 2C4.90937 2 2 4.90937 2 8.5C2 12.0906 4.90937 15 8.5 15C10.125 15 11.6094 14.4031 12.75 13.4187V13.8313C12.75 13.9313 12.7906 14.025 12.8594 14.0969L16.6531 17.8906C16.8 18.0375 17.0375 18.0375 17.1844 17.8906L17.8906 17.1844C18.0375 17.0375 18.0375 16.8 17.8906 16.6531ZM8.5 13.5C5.7375 13.5 3.5 11.2625 3.5 8.5C3.5 5.7375 5.7375 3.5 8.5 3.5C11.2625 3.5 13.5 5.7375 13.5 8.5C13.5 11.2625 11.2625 13.5 8.5 13.5Z"></path>
+</svg>
+</div>
+<div class="nav-profile">
+<div class="default-avatar unregistered">
+<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 20 20" fill="#B2B2B2">
+<path d="M10 0C4.47581 0 0 4.47581 0 10C0 15.5242 4.47581 20 10 20C15.5242 20 20 15.5242 20 10C20 4.47581 15.5242 0 10 0ZM10 3.87097C11.9597 3.87097 13.5484 5.45968 13.5484 7.41935C13.5484 9.37903 11.9597 10.9677 10 10.9677C8.04032 10.9677 6.45161 9.37903 6.45161 7.41935C6.45161 5.45968 8.04032 3.87097 10 3.87097ZM10 17.7419C7.63306 17.7419 5.5121 16.6694 4.09274 14.9919C4.85081 13.5645 6.33468 12.5806 8.06452 12.5806C8.16129 12.5806 8.25806 12.5968 8.35081 12.625C8.875 12.7944 9.42339 12.9032 10 12.9032C10.5766 12.9032 11.129 12.7944 11.6492 12.625C11.7419 12.5968 11.8387 12.5806 11.9355 12.5806C13.6653 12.5806 15.1492 13.5645 15.9073 14.9919C14.4879 16.6694 12.3669 17.7419 10 17.7419Z"></path>
+</svg>
+</div>
+</div>
+<div class="profile-dropdown-block unregistered">
+<div class="profile-dropdown-item">
+<a href="#" class="login-btn button-secondary">登入</a>
+</div>
+<div class="profile-dropdown-item">
+<a href="#" id="signup-btn-mobile" class="signup-btn button-primary">註冊</a>
+</div>
+</div>
+<div class="nav-items-layer">&nbsp;</div>
+<mobile-navbar-search v-model="showSearchBox"></mobile-navbar-search>
+</div>
+<nav class="secondary-navbar-items">
+<a class="secondary-navbar-item secondary-navbar-item--has-bottom-line active" data-nav="intro" href="#">職缺內容
+</a><a class="secondary-navbar-item secondary-navbar-item--has-bottom-line" data-nav="benefits" href="#">員工福利
+</a><a class="secondary-navbar-item secondary-navbar-item--has-bottom-line" data-nav="related-jobs" href="#">相似職缺
+</a>
+</nav>
+<script>
+  $(document).ready(function() {
+    var navbarHeight = $(window).width() < 1085 ? 91 : 56;
+    var activeNav = 0;
+    var dataNavTargets = document.querySelectorAll('*[data-nav-target]');
+    var scrollHandler = _.throttle(function() {
+      var scroll = window.pageYOffset;
+      var windowHeight = $(window).height();
+
+      [].forEach.call(dataNavTargets, function(navTarget, i) {
+        if (Math.floor($(navTarget).offset().top) <= (scroll + navbarHeight) && activeNav != i) {
+          $(".secondary-navbar-items *[data-nav].active").removeClass('active');
+          $(".secondary-navbar-items *[data-nav]").eq(i).addClass('active');
+          activeNav = i;
+        }
+      })
+    }, 500);
+    $(window).scroll(scrollHandler);
+
+    $("*[data-nav]").unbind('click').click(function(e) {
+      e.preventDefault();
+      var target = $(e.target).attr('data-nav');
+
+      $('html, body').animate({
+        scrollTop: Math.ceil($("*[data-nav-target=" + target + "]").offset().top) - navbarHeight,
+      }, 700);
+
+			return false;
+    });
+  });
+</script>
+<template id="y-new-tag">
+<a :href="to" :target="target" class="y-new-tag" @click="$emit('click', $event)">
+<slot></slot>
+</a>
+</template>
+<script>
+if (window.Vue) {
+  Vue.component('y-new-tag', {
+    template: '#y-new-tag',
+    props: {
+      to: {
+        type: String,
+        default: '#'
+      },
+      target: {
+        type: String,
+        default: '_blank'
+      }
+    }
+  });
+}
+</script>
+<template id="mobile-navbar-search">
+<div :class="active && `active`" class="mobile-navbar-search">
+<div class="transition-height">
+<div class="mobile-navbar-search__container">
+<div>
+<y-search-bar ref="mobile-nav-search-bar" class-name="y-search-bar--enhanced" :icon-right="true" :placeholder="searchPlaceholder" type="homepage" clear-and-search @submit="updateKeyword" @input="updateAutocompleteItems" @clear="clearInput"></y-search-bar>
+</div>
+<div class="search-hints">
+<div v-if="trendKeywords.length > 0 && autocompleteItems.length === 0" class="search-hints__section">
+<p class="search-hints__section-title">熱門關鍵字</p>
+<div class="flex flex-row flex-wrap">
+<y-new-tag v-for="(keyword, index) in trendKeywords" :key="`keyword-tag-${index}`" :to="generateSearchLink(keyword)" target="_self">
+{{ keyword }}
+</y-new-tag>
+</div>
+</div>
+<div v-if="searchRecords.length >0 && autocompleteItems.length === 0" class="search-hints__section search-records-section">
+<p class="search-hints__section-title">近期搜尋紀錄</p>
+<ul>
+<li v-for="(record, index) in searchRecords" :key="`search-record-${index}`">
+<a :href="generateSearchLink(record)">
+{{ record }}
+</a>
+</li>
+</ul>
+</div>
+<div v-if="autocompleteItems.length > 0" class="search-hints__section autocomplete-section">
+<ul>
+<li v-for="(item, index) in autocompleteItems" :key="`autocomplete-item-${item.id}`">
+<a v-html="getFormattedItem(item.name)" :href="generateSearchLink(item.name)">
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay" @click="close">
+</div>
+</div>
+</template>
+<script>
+if (window.Vue) {
+  Vue.component('mobile-navbar-search', {
+    template: '#mobile-navbar-search',
+    model: {
+      prop: 'active',
+      event: 'change'
+    },
+    props: {
+      active: Boolean
+    },
+    data: function() {
+      return {
+        term: '',
+        searchPlaceholder: '請輸入關鍵字...',
+        searchRecordsDescription: '近期搜尋紀錄',
+        autocompleteItems: [],
+        searchRecords: [],
+        trendKeywords: ["遠端","職涯博覽會","Golang","日商","AI","全端","JobMenta","內容企劃"],
+        searchTimer: null,
+        previousRequest: null
+      }
+    },
+    created () {
+      const searchRecords = Cookies.get('search_records');
+      this.searchRecords = searchRecords?.split(',').filter(cookie => cookie !== '[object Object]') || []
+    },
+    watch: {
+      active: function (val) {
+        if (val) {
+          setTimeout(
+            this.$refs['mobile-nav-search-bar'].focus,
+            300
+          )
+
+          document.body.classList.add('noscroll')
+        } else {
+          document.body.classList.remove('noscroll')
+        }
+      }
+    },
+    methods: {
+      updateAutocompleteItems: function(term) {
+        this.term = term
+
+        if (term.trim() === '') {
+          this.autocompleteItems = []
+          return false
+        }
+
+        if (this.searchTimer) clearTimeout(this.searchTimer)
+        this.searchTimer = setTimeout(this.searchAutocompleteItems, 400)
+      },
+      searchAutocompleteItems: function () {
+        if(this.term.trim() === '') return false
+
+        let self = this
+        this.currentRequest = $.ajax({
+          type: 'GET',
+          url : `/api/v3/search/search_hint?s=${encodeURIComponent(self.term)}&size=7`,
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+            if (self.previousRequest != null) {
+              self.previousRequest.abort()
+            }
+          }
+        }).done(function(data) {
+          self.autocompleteItems = data.payload.tags.slice(0, 10)
+        }).fail(function(res) {
+          self.autocompleteItems = []
+        }).always(function () {
+          self.previousRequest = null
+          self.searchTimer = null
+        })
+
+        return this.currentRequest
+      },
+      updateKeyword: function(data, action) {
+        if (action !== 'add') return
+
+        const keywordsSet = new Set([data.name, ...this.searchRecords])
+        this.searchRecords = Array.from(keywordsSet).slice(0, 5)
+
+        this.setRecordsToCookie()
+        this.close()
+        location.href = this.generateSearchLink(data.name)
+      },
+      setRecordsToCookie: function () {
+        Cookies.set('search_records', this.searchRecords.join(','), { expires: 365 })
+      },
+      generateSearchLink: function(keyword) {
+        return `/search?s=${keyword}`
+      },
+      close: function () {
+        this.$emit('change', false)
+      },
+      getFormattedItem (item) {
+        let escapeTerm = this.escapeHtml(this.term)
+        let escapeItem = this.escapeHtml(item)
+        let charIndex = escapeItem.toLowerCase().indexOf(escapeTerm.toLowerCase())
+
+        return (charIndex > -1 && escapeTerm.trim() !== '')
+          ? (
+            escapeItem.substring(0, charIndex) +
+            `<span class="active">${escapeItem.substring(charIndex, charIndex + escapeTerm.length)}</span>` +
+            escapeItem.substring(charIndex + escapeTerm.length)
+          )
+          : escapeItem
+      },
+      escapeHtml(unsafe) {
+        return unsafe
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;")
+      },
+      clearInput: function () {
+        this.term = ''
+        this.autocompleteItems = []
+      }
+    }
+  })
+}
+</script>
+<script>
+if (window.Vue) {
+  new Vue({
+    el: '#mobile-navbar',
+    data: function() {
+      return {
+        showSearchBox: false,
+      }
+    },
+    methods: {
+      toggleSearchBox () {
+        this.showSearchBox = !this.showSearchBox
+      },
+    }
+  })
+}
+
+  $('.hamburger-menu').click(function(e){
+    $(this).toggleClass('active');
+    $(".profile-dropdown-block").removeClass("active");
+    $('body').toggleClass('disabled-scroll');
+
+    if ($(this).parents('.navigation').hasClass('alter-mode')) {
+      $('.nav-items.alter-mode-nav-items').toggleClass('active');
+    } else {
+      $('.nav-items:not(.alter-mode-nav-items)').toggleClass('active')
+    }
+
+    e.stopPropagation();
+  })
+
+  $('.nav-items-layer').click(function (e) {
+    if (e.currentTarget === e.target) {
+      $('.hamburger-menu, .nav-items').removeClass('active');
+      $(".profile-dropdown-block").removeClass("active");
+      $('body').removeClass('disabled-scroll');
+    }
+  })
+</script>
+</div>
+</div>
+<script charset="utf-8">
+  $(document).on('turbolinks:load', function run_after_load() {
+    $('.nav-profile:not(.user-dashboard-navbar__profile)')
+      .off('click')
+      .on('click', function(e) {
+        $(".profile-dropdown-block").toggleClass("active");
+        $('body').toggleClass('disabled-scroll');
+        $('.hamburger-menu, .nav-items').removeClass('active');
+      });
+
+
+    $('.logout-btn')
+      .off('click')
+      .on('click', function(e) {
+        // 處理 FB 使用者登出
+        FB.getLoginStatus(function(response) {
+          if(response.authResponse) {
+            FB.logout();
+          }
+        });
+      });
+
+    $(".login-btn")
+      .off('click')
+      .on('click', function(e) {
+        login({ eventSource: 'header_item' });
+        e.preventDefault();
+      });
+
+    $(".signup-btn")
+      .off('click')
+      .on('click', function(e) {
+        register({ eventSource: 'header_item' });
+        e.preventDefault();
+      });
+  })
+
+</script>
+<div id="ResumePromotionModalApp-react-component-2530b65f-9af2-4ef1-8e01-b86b04071858"></div>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="ResumePromotionModalApp" data-dom-id="ResumePromotionModalApp-react-component-2530b65f-9af2-4ef1-8e01-b86b04071858">{"isLogin":false,"timeoutToShow":5000}</script>
+
+<div class="shadow-navbar"></div>
+<div class="main container-fluid">
+<section data-nav-target="intro" class="basic-info row">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="basic-info__title flex flex-align-center">
+<h1 class="basic-info__title__text">【數位金融】數位分析 Data Analyst(數數發中心, DDT)</h1>
+</div>
+<div class="basic-info__title basic-info__title--subtitle">
+<div class="flex flex-row flex-nowrap items-center w-full">
+<img alt="國泰世華商業銀行股份有限公司" class="basic-info__logo flex-none" onerror="this.src=&#39;https://www.yourator.co/assets/default-logo-7de0734f056c46b72a555daf6256eaaf0d2f2d527698a64f26e6c4ca7fb75cd3.png&#39;;" src="https://s3cdn.yourator.co/companies/logos/000/001/706/avatar/cb66632106ddda5cc8430d4030df61b69ccec0e7.jpg" />
+<h4 class="flex-initial truncate">
+<a href="/companies/cathaybk">國泰世華商業銀行</a>
+</h4>
+<div class="flex-none ml-0.5">
+<div class="company-badges">
+<div data-toggle="tooltip" data-placement="bottom" data-container="body" title="DEI 友善企業">
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 6.17647C5.16751 6.17647 1.25 9.86353 1.25 14.4117C1.25 14.7366 0.970178 15 0.625 15C0.279822 15 0 14.7366 0 14.4117C0 9.21378 4.47715 5 10 5C15.5228 5 20 9.21378 20 14.4117C20 14.7366 19.7202 15 19.375 15C19.0298 15 18.75 14.7366 18.75 14.4117C18.75 9.86353 14.8325 6.17647 10 6.17647Z" fill="#FF6262"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.99998 8.13728C6.31808 8.13728 3.33331 10.9465 3.33331 14.4118C3.33331 14.7367 3.05349 15 2.70831 15C2.36314 15 2.08331 14.7367 2.08331 14.4118C2.08331 10.2967 5.62773 6.96082 9.99998 6.96082C14.3722 6.96082 17.9166 10.2967 17.9166 14.4118C17.9166 14.7367 17.6368 15 17.2916 15C16.9465 15 16.6666 14.7367 16.6666 14.4118C16.6666 10.9465 13.6819 8.13728 9.99998 8.13728Z" fill="#FFC400"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 10.098C7.46871 10.098 5.41669 12.0293 5.41669 14.4117C5.41669 14.7366 5.13686 14.9999 4.79169 14.9999C4.44651 14.9999 4.16669 14.7366 4.16669 14.4117C4.16669 11.3795 6.77836 8.92151 10 8.92151C13.2217 8.92151 15.8334 11.3795 15.8334 14.4117C15.8334 14.7366 15.5535 14.9999 15.2084 14.9999C14.8632 14.9999 14.5834 14.7366 14.5834 14.4117C14.5834 12.0293 12.5313 10.098 10 10.098Z" fill="#56C568"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 12.0588C8.61929 12.0588 7.5 13.1122 7.5 14.4117C7.5 14.7366 7.22018 15 6.875 15C6.52982 15 6.25 14.7366 6.25 14.4117C6.25 12.4625 7.92893 10.8823 10 10.8823C12.0711 10.8823 13.75 12.4625 13.75 14.4117C13.75 14.7366 13.4702 15 13.125 15C12.7798 15 12.5 14.7366 12.5 14.4117C12.5 13.1122 11.3807 12.0588 10 12.0588Z" fill="#3FA2F7"></path>
+</svg>
+</div>
+<div data-toggle="tooltip" data-placement="bottom" data-container="body" title="Yourator 認證企業">
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 18 18" fill="none">
+<circle cx="9" cy="9" r="8" fill="white"></circle>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.93156 2.0469C7.92857 0.651033 10.0032 0.651033 11.0002 2.0469L11.159 2.26913C11.3344 2.51479 11.6291 2.64633 11.9291 2.613L12.6366 2.53438C14.2289 2.35747 15.5743 3.70289 15.3974 5.29518L15.3188 6.00269C15.2855 6.30273 15.417 6.59735 15.6627 6.77283L15.8849 6.93156C17.2807 7.92857 17.2807 10.0032 15.8849 11.0002L15.6627 11.159C15.417 11.3344 15.2855 11.6291 15.3188 11.9291L15.3974 12.6366C15.5743 14.2289 14.2289 15.5743 12.6366 15.3974L11.9291 15.3188C11.6291 15.2855 11.3344 15.417 11.159 15.6627L11.0002 15.8849C10.0032 17.2807 7.92865 17.2807 6.93156 15.8849L6.77283 15.6627C6.59735 15.417 6.30273 15.2855 6.00268 15.3188L5.29518 15.3974C3.70289 15.5743 2.35747 14.2289 2.53438 12.6366L2.613 11.9291C2.64633 11.6291 2.51479 11.3344 2.26913 11.159L2.0469 11.0002C0.651033 10.0032 0.651033 7.92865 2.0469 6.93156L2.26913 6.77283C2.51479 6.59735 2.64633 6.30273 2.613 6.00268L2.53438 5.29518C2.35747 3.70289 3.70289 2.35747 5.29518 2.53438L6.00269 2.613C6.30273 2.64633 6.59735 2.51479 6.77283 2.26913L6.93156 2.0469ZM12.0552 6.70998C12.3806 7.03542 12.3806 7.56307 12.0552 7.88848L8.87273 11.0709C8.46398 11.4797 7.80115 11.4797 7.3924 11.0709L5.87664 9.55515C5.55121 9.22973 5.55121 8.70207 5.87664 8.37665C6.20208 8.05123 6.72972 8.05123 7.05516 8.37665L8.13257 9.45407L10.8767 6.70998C11.2021 6.38454 11.7297 6.38454 12.0552 6.70998Z" fill="#2294E7" stroke="white"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-8">
+<div class="company__media">
+<div class="company__banner">
+<img alt onerror="this.src=&#39;https://www.yourator.co/assets/default-banner-f777654d9842b2fc7335b8ac2212162ce0a91402ded080a822cb9e1bea99736c.jpg&#39;;" src="https://s3cdn.yourator.co/banners/banners/000/001/847/home/452994088b45f483ae6a71151a13eb0c9bcabf5d.png" />
+</div>
+</div>
+</div>
+
+<div class="col-md-4 flex flex-column">
+<div class="basic-info__icons flex-item">
+<div class="basic-info__icon basic-info__icon--type">
+<i class="far fa-user"></i>
+<p class="basic-info__job_type inline-flex flex-wrap">
+<a href="/jobs?job_type%5B%5D=full_time">正職</a>
+</p>
+</div>
+<div class="basic-info__icon basic-info__icon--location">
+<i class="far fa-map-marked-alt"></i>
+<p class="basic-info__address inline-flex flex-wrap">
+<a href="/jobs?area%5B%5D=TPE">台灣 臺北市</a>
+</p>
+</div>
+<div class="basic-info__icon basic-info__icon--location">
+<i class="far fa-map-marker-alt"></i>
+<p class="basic-info__address inline-flex flex-wrap">
+<a target="_blank" rel="nofollow" href="https://www.google.com/maps/search/台灣+臺北市+臺北市信義區松仁路7號1樓">
+臺北市信義區松仁路7號1樓
+<i class="far fa-external-link"></i>
+</a> </p>
+</div>
+<div class="basic-info__icon basic-info__icon--tags">
+<i class="far fa-tags"></i>
+<p class="basic-info__tag inline-flex flex-wrap">
+<a class="tag" href="/jobs?term%5B%5D=%E5%B8%82%E5%A0%B4%E8%AA%BF%E6%9F%A5%EF%BC%8F%E5%B8%82%E5%A0%B4%E5%88%86%E6%9E%90">市場調查／市場分析</a>
+<a class="tag" href="/jobs?term%5B%5D=%E7%B5%B1%E8%A8%88%E7%B2%BE%E7%AE%97%E4%BA%BA%E5%93%A1">統計精算人員</a>
+</p>
+</div>
+<div class="basic-info__icon basic-info__icon--last_updated_at">
+<p class="basic-info__last_updated_at">最近更新於 2023-10-30</p>
+</div>
+</div>
+<div class="flex flex-space-between flex-column buttons">
+<a href="/companies/cathaybk/jobs/25159/check_resume" class="button button__blue--reverse  is-fullwidth flex-item apply-button" data-turbolinks="false">
+<i class="far fa-rocket"></i>
+<span class="button__text">
+立即應徵
+</span>
+</a>
+<button class="button button__red is-fullwidth flex-item" follow-type="jobs" follow-id="25159">
+<i class="far fa-heart"></i>
+<span class="button__text button__text--active hidden">已收藏</span>
+<span class="button__text button__text--inactive block">收藏職缺</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="row company-picture-carousel">
+<div class="company-pictures">
+<a data-lightbox="roadtrip" data-title class="gallery-thumbs" href="https://s3cdn.yourator.co/galleries/galleries/000/010/568/default/a69bb4d9f82e4d314c245d2bf1792b66223e40be.png">
+<img alt src="https://s3cdn.yourator.co/galleries/galleries/000/010/568/medium/147a298a5e0276db871d83234dd99ed610664db1.png" />
+</a> <a data-lightbox="roadtrip" data-title class="gallery-thumbs" href="https://s3cdn.yourator.co/galleries/galleries/000/010/584/default/0c881bca5bbc9a9869ba9f19c8191395c21d3d3d.png">
+<img alt src="https://s3cdn.yourator.co/galleries/galleries/000/010/584/medium/d108c5bf6d5de9b2141da1b61278c5ca1c4a8317.png" />
+</a> <a data-lightbox="roadtrip" data-title class="gallery-thumbs" href="https://s3cdn.yourator.co/galleries/galleries/000/010/586/default/9f5b51c0cc00a7173c900f5c8ee5c394dc152169.png">
+<img alt src="https://s3cdn.yourator.co/galleries/galleries/000/010/586/medium/85c7d7cf75e3e0caaf6e7d0bd962f7ef7cfe4c8e.png" />
+</a> </div>
+<span class="carousel-nav__icon forward far fa-angle-left"></span>
+<span class="carousel-nav__icon backward far fa-angle-right"></span>
+</section>
+<script>
+  $(document).ready(function(){
+    var carousel = $('.company-pictures').slick({
+      centerMode:     true,
+      centerPadding:  0,
+      arrows:         false,
+      autoplay:       false,
+      autoplaySpeed:  3000,
+      dots:           false,
+      variableWidth:  true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: true,
+          }
+        }
+      ]
+    });
+
+    setUpCarouselNav();
+
+    function setUpCarouselNav() {
+      $('.carousel-nav__icon.forward').click(function(e){
+        carousel.slick('slickPrev');
+      });
+
+      $('.carousel-nav__icon.backward').click(function(e){
+        carousel.slick('slickNext');
+      });
+    }
+
+    if(device == 'mobile') {
+      var width  = window.innerWidth;
+      var height = width * 420 / 920;
+
+      $('.company-pictures img').each(function(){
+        $(this).css({
+          width: width,
+          height: height
+        });
+      });
+      $('.carousel-nav__icon').css('line-height', $('.company-picture-carousel').css('height'));
+    }
+  });
+</script>
+<section class="relative my-4 normal:mt-8 normal:mb-10 job-description row main-info">
+<div class="mx-auto w-full max-w-screen-front-stage-content px-4 normal:px-0">
+<div class="flex normal:gap-x-8">
+<div class="w-full normal:w-auto min-w-0 flex flex-col gap-4 normal:gap-8 flex-[3_1_0%] job__content">
+<div>
+<h2 class="mb-2 tablet:mb-3 text-emphasize tablet:text-highlight font-bold text-main-blue job-heading">工作內容</h2>
+<section class="content__area unreset"><p>【職務說明 What will you do】<br>
+1. 透過數據驅動建立重點業務指標，運用工具視覺化動態呈現觀測指標，供團隊靈活運用<br>
+2. 根據網路銀行Web,App用戶行為等數據進行商業分析，找出數位金融商業模式及增長機會點，達成商業決策或提升業務執行效率<br>
+3. 有架構的以數據協助團隊拆解問題，並提出洞察、建議改善與發展方向<br>
+4. 追蹤與分析各產品行銷活動之分群回應率與經營成效</p>
+</section>
+</div>
+<div>
+<h2 class="mb-2 tablet:mb-3 text-emphasize tablet:text-highlight font-bold text-main-blue job-heading">條件要求</h2>
+<section class="content__area unreset"><p>工作經驗:不拘</p>
+<p>學歷要求:大學以上</p>
+<p>科系要求:不拘</p>
+<p>語文條件;不拘</p>
+<p>擅長工具</p>
+<p>MS SQL<br>
+MySQL<br>
+Tableau</p>
+</section>
+</div>
+<div>
+<h2 class="mb-2 tablet:mb-3 text-emphasize tablet:text-highlight font-bold text-main-blue job-heading">遠端型態</h2>
+<section class="content__area">
+<div class="remote-content">
+<div>
+<div class="yi baseline">
+<svg class="yi-remote-interview" viewBox="0 0 62.05 63.38">
+<path d="M59.16,8H2.89C1.29,8,0,9.29,0,10.89V51.2c0,1.59,1.29,2.89,2.89,2.89h25.04v3.52h-9.2c-1.59,0-2.89,1.29-2.89,2.89 c0,1.59,1.29,2.89,2.89,2.89h24.84c1.59,0,2.89-1.29,2.89-2.89c0-1.59-1.29-2.89-2.89-2.89H33.7v-3.52h25.47 c1.59,0,2.89-1.29,2.89-2.89V10.89C62.05,9.29,60.76,8,59.16,8z M31.02,32.49c-2.48,0-4.49-2.01-4.49-4.49s2.01-4.49,4.49-4.49 c2.48,0,4.49,2.01,4.49,4.49S33.5,32.49,31.02,32.49z M31.03,37.69c5.34,0,9.68,4.34,9.68,9.68v0.95H21.35v-0.95 C21.35,42.03,25.69,37.69,31.03,37.69z M56.28,48.32H45.03v-0.95c0-5.66-3.38-10.53-8.21-12.74c1.85-1.62,3.02-3.99,3.02-6.63 c0-4.86-3.96-8.82-8.82-8.82s-8.82,3.96-8.82,8.82c0,2.64,1.17,5.01,3.02,6.63c-4.84,2.21-8.21,7.08-8.21,12.74v0.95H5.77V13.77 h50.51V48.32z" />
+</svg>
+</div>
+<strong>
+完全遠端面試
+</strong>
+</div>
+</div>
+<div class="remote-content">
+<div>
+<div class="yi baseline">
+<svg class="yi-remote-work" viewBox="0 0 65.25 63.19">
+<g>
+<path d="M62.37,26.3c-0.55,0-1.12-0.16-1.61-0.49L31.96,6.39L4.55,25.77c-1.3,0.92-3.1,0.61-4.02-0.69
+                        c-0.92-1.3-0.61-3.1,0.69-4.02L30.25,0.53c0.98-0.69,2.28-0.71,3.28-0.04l30.45,20.54c1.32,0.89,1.67,2.68,0.78,4
+                        C64.2,25.86,63.29,26.3,62.37,26.3z" />
+<path d="M54.4,63.19H10.85c-1.59,0-2.88-1.29-2.88-2.88V29.18c0-1.59,1.29-2.88,2.88-2.88s2.88,1.29,2.88,2.88v28.24h37.78V29.18
+                        c0-1.59,1.29-2.88,2.88-2.88c1.59,0,2.88,1.29,2.88,2.88v31.12C57.28,61.9,55.99,63.19,54.4,63.19z" />
+<g>
+<path d="M49.35,40.7c-0.19-0.33-0.55-0.53-0.93-0.53H39.8c-0.88-2.2-2.44-4.05-4.42-5.29c1.25-1.39,2.02-3.23,2.02-5.24
+                          c0-4.33-3.53-7.86-7.86-7.86s-7.86,3.53-7.86,7.86c0,2.02,0.77,3.85,2.02,5.24c-3.12,1.95-5.21,5.41-5.21,9.36v2.54
+                          c0,1.19,0.97,2.16,2.16,2.16s2.16-0.97,2.16-2.16v-2.54c0-3.71,3.02-6.72,6.72-6.72c2.32,0,4.37,1.18,5.58,2.98
+                          c-0.09,0.09-0.17,0.19-0.22,0.31l-3.69,8.11c-0.15,0.33-0.12,0.72,0.08,1.03c0.2,0.31,0.54,0.5,0.91,0.5H44
+                          c0.4,0,0.76-0.22,0.95-0.56l4.42-8.11C49.55,41.43,49.55,41.03,49.35,40.7z M29.54,26.1c1.95,0,3.54,1.59,3.54,3.54
+                          s-1.59,3.54-3.54,3.54s-3.54-1.59-3.54-3.54S27.59,26.1,29.54,26.1z" />
+<path d="M43.14,51.08H25.36c-0.8,0-1.44,0.65-1.44,1.44s0.65,1.44,1.44,1.44h17.78c0.8,0,1.44-0.65,1.44-1.44
+                          S43.94,51.08,43.14,51.08z" />
+</g>
+</g>
+</svg>
+</div>
+<strong>
+部分遠端工作
+</strong>
+</div>
+</div>
+</section>
+</div>
+<div>
+<h2 class="mb-2 tablet:mb-3 text-emphasize tablet:text-highlight font-bold text-main-blue job-heading">加分條件</h2>
+<section class="content__area unreset"><p>1. 具 SQL 資料庫程式撰寫能力<br>
+2. 具數據分析相關經驗，擅長從資料中洞察、分析問題。<br>
+3. 具良好邏輯思維能力，並能快速從數據洞察分析、提出建議。<br>
+4. 具良好溝通能力與團隊合作意識，能擔任跨單位溝通窗口、與夥伴協力達成目標。<br>
+5. 具備金融產品或App分析工作經驗尤佳。</p>
+</section>
+</div>
+<div>
+<h2 data-nav-target="benefits" class="mb-2 tablet:mb-3 text-emphasize tablet:text-highlight font-bold text-main-blue job-heading">員工福利</h2>
+<h4 class="text-general font-bold">法定項目</h4>
+<section class="mb-2 tablet:mb-3">
+勞保、健保、特別休假、勞退、婚假
+</section>
+<h4 class="text-general font-bold">其他福利</h4>
+<section class="content__area unreset">
+<p>【專屬於你的幸福】<br>
+1. 三節獎金(春節、中秋及端午)<br>
+2. 生日禮金<br>
+3. 員工持股信託(行銷專員除外)<br>
+4. 年終獎金<br>
+5. 旅遊補助津貼<br>
+6. 定期教育訓練提升職場競爭力<br>
+7. 子女教育基金</p>
+<p>【你應該擁有的幸福】<br>
+1. 勞保.健保補助<br>
+2. 團體保險及健康健檢計畫</p>
+<p>【一起陪伴的幸福】<br>
+1. 婚喪贈助津貼<br>
+2. 急難救助金<br>
+3. 住院補助金<br>
+4. 社團活動<br>
+5. 關係企業優惠</p>
+</section>
+</div>
+<div>
+<h2 class="mb-2 tablet:mb-3 text-emphasize tablet:text-highlight font-bold text-main-blue job-heading">薪資範圍</h2>
+<section class="content__area">面議（經常性薪資達4萬元）</section>
+</div>
+<section class="content__area flex apply">
+<div class="flex">
+<a href="/companies/cathaybk/jobs/25159/check_resume" class="button button__blue--reverse  is-fullwidth flex-item apply-button" data-turbolinks="false">
+<i class="far fa-rocket"></i>
+<span class="button__text">
+立即應徵
+</span>
+</a>
+</div>
+</section>
+</div>
+<div class="hidden normal:!flex flex-col gap-5 flex-1 sticky self-start top-[75px]">
+<div class="flex flex-space-between flex-column buttons">
+<a href="/companies/cathaybk/jobs/25159/check_resume" class="button button__blue--reverse  is-fullwidth flex-item apply-button" data-turbolinks="false">
+<i class="far fa-rocket"></i>
+<span class="button__text">
+立即應徵
+</span>
+</a>
+<button class="button button__red is-fullwidth flex-item" follow-type="jobs" follow-id="25159">
+<i class="far fa-heart"></i>
+<span class="button__text button__text--active hidden">已收藏</span>
+<span class="button__text button__text--inactive block">收藏職缺</span>
+</button>
+<button class="button flex-item is-fullwidth jobs-btn" data-nav="related-jobs">
+相關推薦職缺
+</button>
+</div>
+<div>
+<h5 class="mb-2 text-highlight font-bold text-main-blue">
+相關連結
+</h5>
+<div class="flex flex-wrap gap-2">
+<a target="_blank" rel="nofollow" class="text-accent-darker-color/[.8] hover:text-accent-darkest-color active:text-accent-darker-color w-[calc(100%_/_6)] normal:w-6 h-6 text-general text-center" href="https://www.facebook.com/cathayunitedbank/">
+<span class="fab fa-facebook-square"></span>
+</a> <a target="_blank" rel="nofollow" class="text-accent-darker-color/[.8] hover:text-accent-darkest-color active:text-accent-darker-color w-[calc(100%_/_6)] normal:w-6 h-6 text-general text-center" href="https://apps.apple.com/tw/app/%E5%9C%8B%E6%B3%B0%E4%B8%96%E8%8F%AF%E7%B6%B2%E8%B7%AF%E9%8A%80%E8%A1%8C/id373500505">
+<span class="fab fa-apple"></span>
+</a> <a target="_blank" rel="nofollow" class="text-accent-darker-color/[.8] hover:text-accent-darkest-color active:text-accent-darker-color w-[calc(100%_/_6)] normal:w-6 h-6 text-general text-center" href="https://play.google.com/store/apps/details?id=com.cathaybk.mymobibank.android&amp;hl=zh_TW&amp;gl=US">
+<span class="fab fa-android"></span>
+</a> <a target="_blank" rel="nofollow" class="text-accent-darker-color/[.8] hover:text-accent-darkest-color active:text-accent-darker-color w-[calc(100%_/_6)] normal:w-6 h-6 text-general text-center" href="https://www.cathaybk.com.tw/cathaybk/">
+<span class="far fa-globe"></span>
+</a> </div>
+</div>
+<script type="application/json" id="js-react-on-rails-context">{"railsEnv":"production","inMailer":false,"i18nLocale":"zh-TW","i18nDefaultLocale":"zh-TW","rorVersion":"13.1.0","rorPro":false,"href":"https://www.yourator.co/companies/cathaybk/jobs/25159","location":"/companies/cathaybk/jobs/25159","scheme":"https","host":"www.yourator.co","port":null,"pathname":"/companies/cathaybk/jobs/25159","search":null,"httpAcceptLanguage":null,"serverSide":false}</script>
+<div id="RelativeEvents-react-component-96850cbc-9987-4185-b740-466dcf861ed8"></div>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="RelativeEvents" data-dom-id="RelativeEvents-react-component-96850cbc-9987-4185-b740-466dcf861ed8">{"type":"job","title":"此職缺相關的主題專區👀","events":[{"url":"/careerfair","name":"2024 數位職涯博覽會","banner":"https://www.yourator.co/assets/careerfair-banner-image-f203b399cc88d848d5ee1ad65e6c44f3911b0d5dc1d84b8a0fc70b690d8bc9a5.png"}]}</script>
+</div>
+</div>
+</div>
+<div class="px-4 tablet:px-0 tablet:hidden">
+<div id="RelativeEvents-react-component-50e8f47c-d8fd-4812-a832-71a1a0cf64ec"></div>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="RelativeEvents" data-dom-id="RelativeEvents-react-component-50e8f47c-d8fd-4812-a832-71a1a0cf64ec">{"type":"job","title":"此職缺相關的主題專區👀","events":[{"url":"/careerfair","name":"2024 數位職涯博覽會","banner":"https://www.yourator.co/assets/careerfair-banner-image-f203b399cc88d848d5ee1ad65e6c44f3911b0d5dc1d84b8a0fc70b690d8bc9a5.png"}]}</script>
+</div>
+</section>
+<div class="pb-7">
+<div class="row job-recommendations">
+<div class="container">
+<p data-nav-target="related-jobs" class="mb-2 tablet:mb-3 text-emphasize tablet:text-highlight font-bold text-main-blue">你可能也感興趣的職缺</p>
+<div class="content">
+<template id="y-job-card">
+<y-new-card class="y-job-card flex flex-column relative" @click="clickHandler" v-observe-visibility="{
+                callback: (isVisible, entry) => visibilityChanged(isVisible, entry),
+                throttle: 500,
+                intersection: {
+                  threshold: 0.5
+                }
+              }">
+<div class="flex flex-row align-center y-job-card__header">
+<a v-if="!hideCompany" :href="getCompanyPageLink" target="_blank" class="y-job-card__logo z-1">
+<y-avatar v-lazy-container="{ selector: 'img', loading: 'https://www.yourator.co/assets/logo-loading-ca726492246de7e35986949c5a82939962bbf6f2835cf727a785bfb9661b5b68.svg', error: 'https://www.yourator.co/assets/default-logo-7de0734f056c46b72a555daf6256eaaf0d2f2d527698a64f26e6c4ca7fb75cd3.png' }">
+<img :data-src="job.company.logo">
+</y-avatar>
+</a>
+<div class="y-job-card__title">
+<y-new-card-title>
+{{ job.name }}
+</y-new-card-title>
+<a v-if="!hideCompany" :href="getCompanyPageLink" target="_blank" class="flex flex-nowrap items-center gap-0.5 relative z-1">
+<y-new-card-subtitle class="flex-initial truncate">
+{{ job.company.brand }}
+</y-new-card-subtitle>
+<div v-if="job?.company?.badges?.includes('verified')" class="flex-none" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Yourator 認證企業">
+<svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 18 18" fill="none">
+<circle cx="9" cy="9" r="8" fill="white"></circle>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.93156 2.0469C7.92857 0.651033 10.0032 0.651033 11.0002 2.0469L11.159 2.26913C11.3344 2.51479 11.6291 2.64633 11.9291 2.613L12.6366 2.53438C14.2289 2.35747 15.5743 3.70289 15.3974 5.29518L15.3188 6.00269C15.2855 6.30273 15.417 6.59735 15.6627 6.77283L15.8849 6.93156C17.2807 7.92857 17.2807 10.0032 15.8849 11.0002L15.6627 11.159C15.417 11.3344 15.2855 11.6291 15.3188 11.9291L15.3974 12.6366C15.5743 14.2289 14.2289 15.5743 12.6366 15.3974L11.9291 15.3188C11.6291 15.2855 11.3344 15.417 11.159 15.6627L11.0002 15.8849C10.0032 17.2807 7.92865 17.2807 6.93156 15.8849L6.77283 15.6627C6.59735 15.417 6.30273 15.2855 6.00268 15.3188L5.29518 15.3974C3.70289 15.5743 2.35747 14.2289 2.53438 12.6366L2.613 11.9291C2.64633 11.6291 2.51479 11.3344 2.26913 11.159L2.0469 11.0002C0.651033 10.0032 0.651033 7.92865 2.0469 6.93156L2.26913 6.77283C2.51479 6.59735 2.64633 6.30273 2.613 6.00268L2.53438 5.29518C2.35747 3.70289 3.70289 2.35747 5.29518 2.53438L6.00269 2.613C6.30273 2.64633 6.59735 2.51479 6.77283 2.26913L6.93156 2.0469ZM12.0552 6.70998C12.3806 7.03542 12.3806 7.56307 12.0552 7.88848L8.87273 11.0709C8.46398 11.4797 7.80115 11.4797 7.3924 11.0709L5.87664 9.55515C5.55121 9.22973 5.55121 8.70207 5.87664 8.37665C6.20208 8.05123 6.72972 8.05123 7.05516 8.37665L8.13257 9.45407L10.8767 6.70998C11.2021 6.38454 11.7297 6.38454 12.0552 6.70998Z" fill="#2294E7" stroke="white"></path>
+</svg>
+</div>
+</a>
+</div>
+</div>
+<div v-if="!hideDescription" class="y-job-card__description">
+<y-new-card-description v-html="job.content">
+</y-new-card-description>
+</div>
+<div class="flex flex-item">
+<div class="y-job-card__info">
+<y-new-card-footer>
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16" fill="none">
+<path d="M9.40078 4.74961C9.40078 4.41711 9.13328 4.14961 8.80078 4.14961C8.46828 4.14961 8.20078 4.41711 8.20078 4.74961C8.20078 5.07961 8.46828 5.34961 8.80078 5.34961C9.13328 5.34961 9.40078 5.07961 9.40078 4.74961ZM8.80078 10.3996C8.92578 10.3996 9.05078 10.3496 9.13828 10.2471C10.0208 9.24711 12.3208 6.49461 12.3208 4.98211C12.3208 3.11461 10.7458 1.59961 8.80078 1.59961C6.85578 1.59961 5.28078 3.11461 5.28078 4.98211C5.28078 6.49211 7.58078 9.24711 8.46328 10.2471C8.55078 10.3496 8.67578 10.3996 8.80078 10.3996ZM8.80078 2.79961C10.0808 2.79961 11.1208 3.77961 11.1208 4.98211C11.1208 5.51711 10.3258 6.95961 8.80078 8.79711C7.27578 6.95961 6.48078 5.51711 6.48078 4.98211C6.48078 3.77961 7.52078 2.79961 8.80078 2.79961ZM14.8008 5.59961C14.7508 5.59961 14.7008 5.60961 14.6508 5.62961L12.8133 6.30961C12.6083 6.81961 12.3083 7.35961 11.9583 7.90461L14.0008 7.14961V11.9746L10.8008 13.0871V9.50711C10.4583 9.93961 10.1033 10.3646 9.73828 10.7771C9.69578 10.8246 9.64828 10.8646 9.60078 10.9046V12.9396L6.40078 11.8096V8.98461C5.94828 8.38211 5.53078 7.76461 5.20078 7.16461V11.6696L5.18578 11.6746L2.00078 12.8496V8.02461L5.09078 6.94961C4.89078 6.56461 4.73828 6.19211 4.63328 5.83711L1.30328 6.99961C1.00078 7.11961 0.800781 7.41461 0.800781 7.74211V13.9996C0.800781 14.2296 0.988281 14.3996 1.20078 14.3996C1.25078 14.3996 1.30078 14.3896 1.35078 14.3696L5.60078 12.7996L9.90078 14.3171C10.2258 14.4246 10.5758 14.4271 10.9008 14.3221L14.6983 12.9996C15.0033 12.8771 15.2008 12.5846 15.2008 12.2571V5.99961C15.2008 5.76961 15.0133 5.59961 14.8008 5.59961Z" fill="#979797"></path>
+</svg>
+<a :href="getJobSearchPageLink('area', job.city.code)" target="_blank" class="z-1">
+{{ getLocation }}
+</a>
+</y-new-card-footer>
+<y-new-card-footer>
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" fill="none">
+<path d="M14 12.5C12.7312 12.5 12.5125 12.4531 11.7437 12.7125C11.1969 12.8969 10.6094 13 10 13C9.39062 13 8.80312 12.8969 8.25625 12.7125C7.4875 12.4531 7.27187 12.5 6 12.5C3.79063 12.5 2 14.2906 2 16.5V17C2 17.5531 2.44687 18 3 18H17C17.5531 18 18 17.5531 18 17V16.5C18 14.2906 16.2094 12.5 14 12.5ZM16.5 16.5H3.5C3.5 15.8313 3.75938 15.2031 4.23125 14.7312C4.70312 14.2594 5.33125 14 6 14C7.28438 14 7.28125 13.9656 7.775 14.1313C8.49375 14.375 9.24375 14.5 10 14.5C10.7563 14.5 11.5063 14.375 12.225 14.1313C12.7188 13.9625 12.7156 14 14 14C15.3781 14 16.5 15.1219 16.5 16.5ZM10 12C12.7625 12 15 9.7625 15 7C15 4.2375 12.7625 2 10 2C7.2375 2 5 4.2375 5 7C5 9.7625 7.2375 12 10 12ZM10 3.5C11.9312 3.5 13.5 5.06875 13.5 7C13.5 8.93125 11.9312 10.5 10 10.5C8.06875 10.5 6.5 8.93125 6.5 7C6.5 5.06875 8.06875 3.5 10 3.5Z" fill="black"></path>
+</svg>
+<span>{{ job.salary }}</span>
+</y-new-card-footer>
+<y-new-card-footer>
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" fill="#6C6C6C">
+<path d="M7 6.625V5.375C7 5.16875 7.16875 5 7.375 5H8.625C8.83125 5 9 5.16875 9 5.375V6.625C9 6.83125 8.83125 7 8.625 7H7.375C7.16875 7 7 6.83125 7 6.625ZM11.375 7H12.625C12.8313 7 13 6.83125 13 6.625V5.375C13 5.16875 12.8313 5 12.625 5H11.375C11.1687 5 11 5.16875 11 5.375V6.625C11 6.83125 11.1687 7 11.375 7ZM7.375 10H8.625C8.83125 10 9 9.83125 9 9.625V8.375C9 8.16875 8.83125 8 8.625 8H7.375C7.16875 8 7 8.16875 7 8.375V9.625C7 9.83125 7.16875 10 7.375 10ZM11.375 10H12.625C12.8313 10 13 9.83125 13 9.625V8.375C13 8.16875 12.8313 8 12.625 8H11.375C11.1687 8 11 8.16875 11 8.375V9.625C11 9.83125 11.1687 10 11.375 10ZM9 12.625V11.375C9 11.1687 8.83125 11 8.625 11H7.375C7.16875 11 7 11.1687 7 11.375V12.625C7 12.8313 7.16875 13 7.375 13H8.625C8.83125 13 9 12.8313 9 12.625ZM11.375 13H12.625C12.8313 13 13 12.8313 13 12.625V11.375C13 11.1687 12.8313 11 12.625 11H11.375C11.1687 11 11 11.1687 11 11.375V12.625C11 12.8313 11.1687 13 11.375 13ZM17 16.875V18H3V16.875C3 16.6687 3.16875 16.5 3.375 16.5H3.98438V2.75C3.98438 2.33437 4.31875 2 4.73438 2H15.2656C15.6812 2 16.0156 2.33437 16.0156 2.75V16.5H16.625C16.8313 16.5 17 16.6687 17 16.875ZM5.48438 16.4688H9V14.375C9 14.1687 9.16875 14 9.375 14H10.625C10.8313 14 11 14.1687 11 14.375V16.4688H14.5156V3.53125L5.5 3.5L5.48438 16.4688Z"></path>
+</svg>
+<a :href="getJobSearchPageLink('category', job.category.name)" target="_blank" class="z-1">
+{{ job.category.name }}
+</a>
+</y-new-card-footer>
+<y-new-card-footer v-if="!hideTags && job.tags.length">
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16" fill="none">
+<path d="M14.0481 7.24813L8.75108 1.95108C8.52604 1.72604 8.22082 1.59961 7.90256 1.59961H2.79961C2.13686 1.59961 1.59961 2.13686 1.59961 2.79961V7.90256C1.59961 8.06015 1.63065 8.21619 1.69095 8.36178C1.75126 8.50737 1.83965 8.63966 1.95108 8.75108L7.24813 14.0481C7.71676 14.5168 8.47656 14.5168 8.94518 14.0481L14.0481 8.94518C14.5168 8.47656 14.5168 7.71676 14.0481 7.24813ZM8.09676 13.1995L2.79961 7.90256V2.79961H7.90256L13.1996 8.09666L8.09676 13.1995ZM6.39961 5.19961C6.39961 5.86236 5.86236 6.39961 5.19961 6.39961C4.53686 6.39961 3.99961 5.86236 3.99961 5.19961C3.99961 4.53686 4.53686 3.99961 5.19961 3.99961C5.86236 3.99961 6.39961 4.53686 6.39961 5.19961Z" fill="#979797"></path>
+</svg>
+<div class="y-new-tags">
+<y-new-tag v-for="tag in job.tags" :key="`job-tag-${tag.id}`" :to="getJobSearchPageLink('term', tag.name)" rel="nofollow" class="relative z-1">
+{{ tag.name }}
+</y-new-tag>
+</div>
+</y-new-card-footer>
+</div>
+<y-new-card-fab v-if="!hideFavoriteButton">
+<y-favorite-button :active="job.isFollowing" :follow-id="job.id" follow-type="jobs" class="relative z-1">
+</y-favorite-button>
+</y-new-card-fab>
+</div>
+<a :href="getJobPageLink" target="_blank" class="absolute z-0 w-full h-full inset-0">
+</y-new-card>
+</template>
+<template id="y-new-card">
+<component :is="element" :href="to" :target="to && target" :class="classes" v-on:click="$emit('click', $event)">
+<slot></slot>
+</component>
+</template>
+<script>
+ (function () {
+    Vue.component('y-new-card', {
+      template: '#y-new-card',
+      props: {
+        to: {
+          type: String,
+          default: undefined
+        },
+        target: {
+          type: String,
+          default: '_blank'
+        },
+        shadow: {
+          type: Boolean,
+          default: true
+        }
+      },
+      data: function() {
+        return {
+        }
+      },
+      computed: {
+        element: function () {
+          return this.to ? 'a' : 'div'
+        },
+        classes: function () {
+          return {
+            'y-new-card': true,
+            'y-new-card--shadow': this.shadow
+          }
+        }
+      },
+      methods: {
+      }
+    })
+
+    const createSimpleElement = function (className, el = 'div', name = null) {
+      return Vue.extend({
+        name: name || className.replace(/__/g, '-'),
+        functional: true,
+        render (h, { data, children }) {
+          data.staticClass = (`${className} ${data.staticClass || ''}`).trim()
+
+          return h(el, data, children)
+        }
+      })
+    }
+
+    const subElements = {
+      'y-new-card-title': createSimpleElement('y-new-card__title'),
+      'y-new-card-subtitle': createSimpleElement('y-new-card__subtitle'),
+      'y-new-card-description': createSimpleElement('y-new-card__description'),
+      'y-new-card-footer': createSimpleElement('y-new-card__footer'),
+      'y-new-card-fab': createSimpleElement('y-new-card__fab')
+    }
+
+    for(let component in subElements) {
+      Vue.component(
+        component,
+        subElements[component]
+      )
+    }
+ })()
+</script>
+<template id="y-new-tag">
+<a :href="to" :target="target" class="y-new-tag" @click="$emit('click', $event)">
+<slot></slot>
+</a>
+</template>
+<script>
+if (window.Vue) {
+  Vue.component('y-new-tag', {
+    template: '#y-new-tag',
+    props: {
+      to: {
+        type: String,
+        default: '#'
+      },
+      target: {
+        type: String,
+        default: '_blank'
+      }
+    }
+  });
+}
+</script>
+<template id="y-avatar">
+<div class="y-avatar" :style="styles">
+<slot></slot>
+</div>
+</template>
+<script>
+  Vue.component('y-avatar', {
+    template: '#y-avatar',
+    props: {
+      size: {
+        type: [Number, String],
+        default: 40
+      },
+      color: {
+        type: String,
+        default: 'transparent'
+      }
+    },
+    data: function() {
+      return {
+      }
+    },
+    computed: {
+      styles: function () {
+        return {
+          height: this.convertToUnit(this.size),
+          width: this.convertToUnit(this.size),
+          minWidth: this.convertToUnit(this.size),
+          background: this.color
+        }
+      }
+    },
+    methods: {
+      convertToUnit: function (value) {
+        if (value == null || value === '') {
+          return undefined
+        } else if (isNaN(+value)) {
+          return String(value)
+        } else {
+          return `${Number(value)}px`
+        }
+      }
+    }
+  })
+</script>
+<template id="y-favorite-button">
+<y-button :follow-id="followId" :follow-type="followType" fab :class="classes">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#fff">
+<path d="M16.325 4.00908C14.5188 2.49033 11.7281 2.71846 10 4.47783C8.27188 2.71846 5.48125 2.48721 3.675 4.00908C1.325 5.98721 1.66875 9.21221 3.34375 10.9216L8.825 16.506C9.1375 16.8247 9.55625 17.0028 10 17.0028C10.4469 17.0028 10.8625 16.8278 11.175 16.5091L16.6563 10.9247C18.3281 9.21533 18.6781 5.99033 16.325 4.00908ZM15.5875 9.86846L10.1063 15.4528C10.0313 15.5278 9.96875 15.5278 9.89375 15.4528L4.4125 9.86846C3.27188 8.70596 3.04063 6.50596 4.64063 5.15908C5.85625 4.13721 7.73125 4.29033 8.90625 5.48721L10 6.60283L11.0938 5.48721C12.275 4.28408 14.15 4.13721 15.3594 5.15596C16.9563 6.50283 16.7188 8.71533 15.5875 9.86846Z"></path>
+</svg>
+</y-button>
+</template>
+<template id="y-button">
+<component :is="element" :href="to" :target="to && target" :style="styles" :class="classes" @click="click">
+<span class="y-button__content">
+<slot></slot>
+</span>
+</component>
+</template>
+<script>
+  Vue.component('y-button', {
+    template: '#y-button',
+    props: {
+      to: {
+        type: String,
+        default: undefined
+      },
+      target: {
+        type: String,
+        default: undefined
+      },
+      color: {
+        type: String,
+        default: ''
+      },
+      raised: {
+        type: Boolean,
+        default: false
+      },
+      fab: {
+        type: Boolean,
+        default: false
+      },
+      outline: {
+        type: Boolean,
+        default: false
+      },
+      fullWidth: {
+        type: Boolean,
+        default: false
+      },
+      active: {
+        type: Boolean,
+        default: false
+      }
+    },
+    data: function() {
+      return {
+      }
+    },
+    computed: {
+      element: function () {
+        return this.to ? 'a' : 'button'
+      },
+      classes: function () {
+        return {
+          'y-button': true,
+          'y-button--default': !this.raised && !this.fab && !this.outline,
+          'y-button--raised': this.raised,
+          'y-button--fab': this.fab,
+          'y-button--active': this.active,
+          'y-button--outline': this.outline,
+          'y-button--full-width': this.fullWidth,
+          [this.color]: !this.customColor
+        }
+      },
+      styles: function () {
+        return {
+          backgroundColor: this.customColor && this.color
+        }
+      },
+      customColor: function () {
+        return ['primary', 'success', 'error'].findIndex(c => c === this.color) === -1
+      }
+    },
+    methods: {
+      click: function (e) {
+        this.$emit('click', e)
+      }
+    }
+  });
+</script>
+<script>
+  Vue.component('y-favorite-button', {
+    template: '#y-favorite-button',
+    props: {
+      active: {
+        type: Boolean,
+        required: true
+      },
+      followId: {
+        type: [Number, String],
+        required: true
+      },
+      followType: {
+        type: String,
+        required: true
+      }
+    },
+    computed: {
+      classes: function () {
+        return {
+          'y-favorite-button': true,
+          'active': this.active
+        }
+      }
+    }
+  })
+</script>
+<script>
+  Vue.component('y-job-card', {
+    template: '#y-job-card',
+    mixins: [Vue.helpers],
+    props: {
+      job: {
+        type: Object,
+        required: true,
+        default: function () {
+          return {
+            id: 0,
+            name: '',
+            content: '',
+            salary: 'NT$ 0 - 0 (月薪)',
+            country: {
+              code: 'TW',
+              name: '台灣'
+            },
+            city: {
+              code: 'TPE',
+              name: '台北市'
+            },
+            category: {
+              id: 0,
+              name: ''
+            },
+            tags: [
+              {
+                id: 0,
+                name: ''
+              }
+            ],
+            company: {
+              id: 0,
+              brand: '',
+              enName: '',
+              logo: '',
+              badges: [],
+            },
+            isFollowing: false
+          }
+        }
+      },
+      jobLink: {
+        type: String,
+        default: ''
+      },
+      hideDescription: {
+        type: Boolean,
+        default: false
+      },
+      hideTags: {
+        type: Boolean,
+        default: false
+      },
+      hideFavoriteButton: {
+        type: Boolean,
+        default: false
+      },
+      hideCompany: {
+        type: Boolean,
+        default: false
+      },
+      source: {
+        type: String,
+        default: ''
+      },
+      viewed: false,
+      reference: {
+        type: Object,
+      },
+      index: {
+        type: Number
+      }
+    },
+    data: function() {
+      return {
+      }
+    },
+    mounted: function () {
+      setUpFollowBtns();
+    },
+    computed: {
+      getLocation: function () {
+        return `${this.job.country.name} ${this.job.city.name}`
+      },
+      getCompanyPageLink: function () {
+        const base = '/companies'
+        return `${base}/${this.job.company.enName}`
+      },
+      getJobPageLink: function () {
+        return this.jobLink || `${this.getCompanyPageLink}/jobs/${this.job.id}`
+      },
+      trackingContext: function () {
+
+        let result = {
+          job_id: this.job.id,
+          company_id: this.job.company.id,
+          source: this.source,
+          index: this.index
+        }
+
+        if (this.reference) {
+          result.reference = this.reference
+        }
+
+
+        return result
+      }
+    },
+    methods: {
+      clickHandler (e) {
+        this.tracking('job:click', this.trackingContext, 'v3')
+        this.$emit('click', e)
+      },
+      visibilityChanged: function(isVisible, entry) {
+        if(isVisible && !this.viewed) {
+          this.viewed = true;
+          this.tracking('job:view', this.trackingContext, 'v3')
+        }
+      },
+      getJobSearchPageLink: function (type = null, value = null) {
+        const base = '/jobs'
+
+        if (type && value && type === 'area') {
+          const area = this.job.country.code !== 'TW' ? 'oversea' : value
+          return `${base}?${type}[]=${area}`
+        } else if (type && value) {
+          return `${base}?${type}[]=${value}`
+        } else {
+          return base
+        }
+      }
+    }
+  })
+</script>
+<template id="y-fake-job-card">
+<div class="overflow-hidden p-4 bg-white border border-light-gray shadow-[2px_3px_0] shadow-accent-fuzzy-color">
+<div class="flex flex-row items-center mb-[30px] gap-3">
+<div class="w-10 h-10 bg-[#6aa4ef] rounded-full shrink-0"></div>
+<div class>
+<div class="flex flex-row gap-1">
+<div class="w-full max-w-[22px] h-[22px] bg-lightest-navy"></div>
+<div class="w-full max-w-[22px] h-[22px] bg-lightest-navy"></div>
+<div class="w-full max-w-[22px] h-[22px] bg-lightest-navy"></div>
+<div class="w-full max-w-[22px] h-[22px] bg-lightest-navy"></div>
+</div>
+<div class="mt-1.5 w-[180px] h-3 bg-footer-blue rounded"></div>
+</div>
+</div>
+<div class="flex flex-row justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex flex-row items-center gap-2 h-5">
+<div class="w-4 h-4 bg-light-navy"></div>
+<div class="w-[60px] h-[9px] rounded bg-footer-blue"></div>
+</div>
+<div class="flex flex-row items-center gap-2 h-5">
+<div class="w-4 h-4 bg-lightest-navy"></div>
+<div class="w-[140px] h-[9px] rounded bg-footer-blue"></div>
+</div>
+<div class="flex flex-row items-center gap-2 h-5">
+<div class="w-4 h-4 bg-lightest-navy"></div>
+<div class="w-[90px] h-[9px] rounded bg-footer-blue"></div>
+</div>
+<div class="flex flex-row items-center gap-2 h-5">
+<div class="w-4 h-4 bg-lightest-navy"></div>
+<div class="w-10 h-4 bg-footer-blue rounded"></div>
+<div class="w-10 h-4 bg-footer-blue rounded"></div>
+<div class="w-10 h-4 bg-footer-blue rounded"></div>
+</div>
+</div>
+<div class="flex items-end justify-end">
+<div class="w-9 h-9 rounded-full bg-footer-blue"></div>
+</div>
+</div>
+</div>
+</template>
+<template id="y-new-card">
+<component :is="element" :href="to" :target="to && target" :class="classes" v-on:click="$emit('click', $event)">
+<slot></slot>
+</component>
+</template>
+<script>
+ (function () {
+    Vue.component('y-new-card', {
+      template: '#y-new-card',
+      props: {
+        to: {
+          type: String,
+          default: undefined
+        },
+        target: {
+          type: String,
+          default: '_blank'
+        },
+        shadow: {
+          type: Boolean,
+          default: true
+        }
+      },
+      data: function() {
+        return {
+        }
+      },
+      computed: {
+        element: function () {
+          return this.to ? 'a' : 'div'
+        },
+        classes: function () {
+          return {
+            'y-new-card': true,
+            'y-new-card--shadow': this.shadow
+          }
+        }
+      },
+      methods: {
+      }
+    })
+
+    const createSimpleElement = function (className, el = 'div', name = null) {
+      return Vue.extend({
+        name: name || className.replace(/__/g, '-'),
+        functional: true,
+        render (h, { data, children }) {
+          data.staticClass = (`${className} ${data.staticClass || ''}`).trim()
+
+          return h(el, data, children)
+        }
+      })
+    }
+
+    const subElements = {
+      'y-new-card-title': createSimpleElement('y-new-card__title'),
+      'y-new-card-subtitle': createSimpleElement('y-new-card__subtitle'),
+      'y-new-card-description': createSimpleElement('y-new-card__description'),
+      'y-new-card-footer': createSimpleElement('y-new-card__footer'),
+      'y-new-card-fab': createSimpleElement('y-new-card__fab')
+    }
+
+    for(let component in subElements) {
+      Vue.component(
+        component,
+        subElements[component]
+      )
+    }
+ })()
+</script>
+<script>
+  Vue.component('y-fake-job-card', {
+    template: '#y-fake-job-card',
+  })
+</script>
+<div id="job-recommendations">
+<div class="row job-recommendation-cards row-no-gutters">
+<div v-for="(job, index) in jobs" class="col-lg-4 col-sm-6 col-xs-12 flex">
+<y-job-card :key="`recommend-job-${job.id}`" :job="job" :job-link="getJobLink(job, index)" :source="source" :index="index" :reference="reference" hide-description>
+</y-job-card>
+</div>
+<div class="relative mb-2 px-2 w-full tablet:w-1/2 hidden tablet:!block content:!hidden cursor-pointer" v-if="isLogin === false" @click="login">
+<y-fake-job-card></y-fake-job-card>
+<div class="absolute top-0 left-0 w-full h-full backdrop-blur-md"></div>
+<div class="absolute top-1/2 left-1/2 w-full text-center z-10 -translate-x-1/2 -translate-y-1/2 text-main-text">
+<p class="font-bold text-highlight text-center text-main-blue">登入看更多專屬於您的推薦職缺！</p>
+<button class="mt-3 py-2 px-[60px] font-medium text-emphasize rounded bg-main-blue text-white text-center" data-promotion-cta="job-recommendation" @click="login">
+立即登入
+</button>
+</div>
+</div>
+</div>
+<div v-if="jobs.length >= 6" class="flex flex-justify-center">
+<a class="job-recommendations__more-btn button-secondary" target="_blank" href="/jobs?term%5B%5D=%E5%B8%82%E5%A0%B4%E8%AA%BF%E6%9F%A5%EF%BC%8F%E5%B8%82%E5%A0%B4%E5%88%86%E6%9E%90&amp;term%5B%5D=%E7%B5%B1%E8%A8%88%E7%B2%BE%E7%AE%97%E4%BA%BA%E5%93%A1">
+<span class="button__text">瀏覽更多職缺</span>
+</a> </div>
+<div class="relative flex flex-wrap tablet:hidden content:flex -mx-2 cursor-pointer" v-if="isLogin === false" @click="login">
+<div class="relative mb-2 px-2 py-4 w-full tablet:w-1/2 content:w-1/3" v-for="(id) in fakeJobCards">
+<y-fake-job-card :key="`${id}`"></y-fake-job-card>
+</div>
+<div class="absolute top-0 left-0 w-full h-full backdrop-blur-md"></div>
+<div class="absolute top-1/2 left-1/2 w-full text-center z-10 -translate-x-1/2 -translate-y-1/2 text-main-text">
+<p class="font-bold text-highlight text-center text-main-blue">登入看更多專屬於您的推薦職缺！</p>
+<button class="mt-3 py-2 px-[60px] font-medium text-emphasize rounded bg-main-blue text-white text-center" data-promotion-cta="job-recommendation">
+立即登入
+</button>
+</div>
+</div>
+</div>
+<script>
+  new Vue({
+    el: '#job-recommendations',
+    mixins: [Vue.helpers],
+    data: function() {
+      return {
+        jobs: [{"id":22598,"name":"｜行動支付｜數位金融產品經理","content":" \r\n\r\n1. 行動支付/金流專案規劃及異業合作與管理維運。\r\n2. 新型支付應用及研究，如API串接及其他新型支付等。\r\n","isFollowing":null,"country":{"code":"TW","name":"台灣"},"city":{"code":"TPE","name":"臺北市"},"salary":"面議（經常性薪資達4萬元）","tags":[{"id":98,"name":"Fintech"},{"id":110,"name":"金融科技"},{"id":97,"name":"行動支付"}],"category":{"id":17,"name":"專案 / 產品管理"},"company":{"id":1091,"brand":"台新銀行","enName":"taishinbank","badges":["dei","verified"],"logo":"https://s3cdn.yourator.co/companies/logos/000/001/091/avatar/3e7e57fddfb943dbce319cc40c65943bf972a9f3.png"}},{"id":30507,"name":"出納專員","content":"◆ 如果想學習相關課程公司會贊助你\r\n◆ 只要你想學，公司都有提供培訓，就怕你不學\r\n◆ 吃不完的零食、飲料、咖啡，適時休息補充能量，執行力up up\r\n◆ 公司扁平文化，主管們平易近人，有任何問題歡迎大家一起互相學習分享\r\n◆ 公司非常重視開放、積極的溝通和協作，代表公司鼓勵每個人表達自己的想法，並且有機會參與討論與決策，所以歡迎所有夥伴積極參與和貢獻自己的能力與知識\r\n◆ 提倡快樂學習、快樂工作，才有辦法創造價值，為公司帶來績效，公司有營收我們就會有更多福利\r\n◆ 不怕試錯，勇於挑戰\r\n◆補班日別人都在上班，我們辦活動聚餐\r\n\r\n\r\n\r\n【你將負責的任務】\r\n\r\n1、 配合採購專員及時通知供應商貨款。\r\n2、 各項費用支付、一般收付出納作業並做好日記帳。\r\n3、 提示業務專員催收款項。\r\n4、 製作財務報表與營收損益分析。\r\n5、 覈算與發放薪資\r\n6、 建立工作日誌備查。\r\n","isFollowing":null,"country":{"code":"TW","name":"台灣"},"city":{"code":"NWT","name":"新北市"},"salary":"NT$ 33,000 - 40,000 (月薪)","tags":[],"category":{"id":31,"name":"財務 / 會計"},"company":{"id":1994,"brand":"台灣網路數據有限公司","enName":"twnwd","badges":["verified"],"logo":"https://s3cdn.yourator.co/companies/logos/000/001/994/avatar/de68ca6943dc673452b31b2c5b0494940bc88cd2.png"}},{"id":31120,"name":"【海外通路】國際消金商業分析師（數數發中心, DDT）   ","content":"協助國泰世華銀行釐清海外業務商業問題並提出執行規劃，包含但不限於以下：\r\n1. 規劃、執行數據分析或建置預測模型，有效識別商機、客戶風險或行為屬性，以協助達成商業/風險決策或提升效率。\r\n2. 透過顧客交易行為及非結構化資料路徑分析、斷點等分析方法，優化服務體驗，提升顧客價值。\r\n3. 專案規劃及執行成效分析，並提出改進方案。\r\n4. 掌握風險與商業分析趨勢，提出並落實客戶分群與挖掘需求偏好、興趣、與風險等分析洞察。\r\n","isFollowing":null,"country":{"code":"TW","name":"台灣"},"city":{"code":"TPE","name":"臺北市"},"salary":"面議（經常性薪資達4萬元）","tags":[{"id":689,"name":"電腦系統分析師"}],"category":{"id":12,"name":"MIS / 網路管理"},"company":{"id":1706,"brand":"國泰世華商業銀行","enName":"cathaybk","badges":["dei","verified"],"logo":"https://s3cdn.yourator.co/companies/logos/000/001/706/avatar/cb66632106ddda5cc8430d4030df61b69ccec0e7.jpg"}}],
+        source: "jobs_show",
+        reference: {job_id: 25159},
+        isLogin: false,
+      }
+    },
+    computed: {
+      fakeJobCards: function () {
+        const num = device === 'mobile' ? 1 : 3
+        return [...Array(num).keys()]
+      }
+    },
+    methods: {
+      getJobLink: function(job, index) {
+        return `/companies/${job.company.enName}/jobs/${job.id}`
+      },
+      login: function() {
+        this.tracking(
+          'user:click_login',
+          {
+            "job_id": 25159,
+            "company_id": 1706,
+            "source": "job_detail",
+          }, 'v3'
+        )
+        window.ymodals.commands.push({
+          type: 'login',
+          props: {
+            eventSource: 'job_recommendation',
+          }
+        })
+      },
+    }
+  })
+</script>
+</div>
+</div>
+</div>
+</div>
+<script>
+  const showIncompleteResumeHintModal = () => {
+    const tracking = (eventName, payload = {}) => {
+      const pixel = new Image()
+
+      pixel.src = '/api/v3/ec?'
+        + `name=${encodeURIComponent(eventName)}&payload=${encodeURIComponent(JSON.stringify(payload))}`
+    }
+    window.ymodals.commands.push({
+      type: 'confirmV2',
+      props: {
+        type: 'alert',
+        title: '履歷完整度未達投遞門檻',
+        description: '過於簡潔的履歷容易被 HR 忽略，您必須至少填寫「基本資料」、「學歷」及「專業技能」才能繼續應徵。<br /><br />不知道怎麼寫履歷嗎？<a href="https://www.yourator.co/articles/152" target="_blank">看看我們的求職攻略</a>',
+        onConfirm: () => {
+          tracking('apply:resume_completion_guide', {
+            job_id: 25159,
+            company_id: 1706,
+            incomplete_section: ["summary","skills","educations","experiences","attachments","collections","languages"],
+            filled_section: [],
+            action: 'edit_resume',
+          });
+          window.location.href = "/resumes";
+        },
+        onClose: () => {},
+        hideCancelButton: true,
+        buttonGroupClassName: 'ml-0',
+        confirmButtonText: '馬上補充履歷',
+      },
+    })
+  }
+  $('.apply-button').click(function(event) {
+    const tracking = (eventName, payload = {}) => {
+      const pixel = new Image()
+
+      pixel.src = '/api/v3/ec?'
+        + `name=${encodeURIComponent(eventName)}&payload=${encodeURIComponent(JSON.stringify(payload))}`
+    }
+    const clickContext = {
+      job_id: 25159,
+      company_id: 1706,
+      index: 0,
+      source: 'job_show',
+      type: 'YOURATOR',
+      last_applied_at: "",
+      can_apply: false,
+    }
+    const externalLinkConfirmContext = {
+      job_id: 25159,
+      company_id: 1706,
+      type: 'YOURATOR',
+      source: 'job_show',
+      can_apply: false,
+    }
+      event.preventDefault();
+      login({ eventSource: 'apply_job' });
+      window.yFlashMessages.commands.push({
+        message: '投遞履歷前請先登入。',
+        type: 'warning',
+      })
+    tracking('apply:click', clickContext);
+  });
+</script>
+</div>
+
+<div id="FooterManagement-react-component-2eeb0bd2-417b-44f8-a8b8-99f488f7f691"></div>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="FooterManagement" data-dom-id="FooterManagement-react-component-2eeb0bd2-417b-44f8-a8b8-99f488f7f691">{"versionTag":"147.2\n"}</script>
+
+
+<script type="text/javascript">
+    window.addEventListener('turbolinks:before-render', function () {
+      window.zEACLoaded = undefined;
+    });
+    // 使用者開啟 Zendesk widget 時再 loading 相關資源
+    window.zESettings = {
+      webWidget: {
+        chat: {
+          connectOnPageLoad: false
+        }
+      }
+    };
+    (function(d, key) {
+      var script = d.createElement('script');
+      script.type = 'text/javascript';
+      script.id = 'ze-snippet';
+      script.async = true;
+      script.src = 'https://static.zdassets.com/ekr/snippet.js?key='+key;
+      document.getElementsByTagName('head')[0].appendChild(script);
+    })(document, '002bccbb-41ce-4c63-82c0-b3f168994c17');
+  </script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+  js.async = !0;
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2202805,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+<script>
+function login(options) {
+  const props = (options && options.eventSource) ? { eventSource: options.eventSource } : undefined
+  window.ymodals.commands.push({
+    type: 'login',
+    props,
+  })
+}
+
+function register(options) {
+  const props = (options?.from || options?.eventSource) ? {
+    registeredFrom: options.from, eventSource: options.eventSource
+  } : undefined
+  window.ymodals.commands.push({
+    type: 'register',
+    props,
+  })
+}
+</script>
+<script>
+    $(document).on("turbolinks:load", function() {
+      $("html").addClass("v2-5");
+    });
+  </script>
+</body>
+</html>
